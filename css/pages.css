@@ -199,7 +199,10 @@ a.equalize-right:hover, a.equalize-right:visited, a.equalize-right:focus {
 
 a.equalize-left i, a.equalize-right i {
 
+ion-icon {
+  --ionicon-stroke-width: 16px;
 }
+
 
 .sideprod
 @media (max-width: 1000px) {
