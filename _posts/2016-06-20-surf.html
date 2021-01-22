@@ -46,51 +46,41 @@ categories:
 
 <body onload="loaded()">
 
-<style>
-  .backdrop {
-    background-image: url('{{ site.baseurl }}/images/surf/surfbg.jpg');
-  }
-</style>
-
 {% include_relative header.html %}
 
-
-
-
-
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 
 <div style="height:300vh; position:absolute; width:20px;"></div>
 <div id="imagesequence" id="trigger">
-  <img id="myimg" src="/images/surf/1.png" style="display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;">
+  <img id="myimg" src="/frames/images/surf/1.png" style="display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;">
 </div>
 
 <script>
   // define images
   var images = [
-    "/images/surf/1.png",
-    "/images/surf/2.png",
-    "/images/surf/3.png",
-    "/images/surf/4.png",
-    "/images/surf/5.png",
-    "/images/surf/6.png",
-    "/images/surf/7.png",
-    "/images/surf/8.png",
-    "/images/surf/9.png",
-    "/images/surf/10.png",
-    "/images/surf/11.png",
-    "/images/surf/12.png",
-    "/images/surf/13.png",
-    "/images/surf/14.png",
-    "/images/surf/15.png",
-    "/images/surf/16.png",
-    "/images/surf/17.png",
-    "/images/surf/18.png",
-    "/images/surf/19.png",
-    "/images/surf/20.png",
+    "/frames/images/surf/1.png",
+    "/frames/images/surf/2.png",
+    "/frames/images/surf/3.png",
+    "/frames/images/surf/4.png",
+    "/frames/images/surf/5.png",
+    "/frames/images/surf/6.png",
+    "/frames/images/surf/7.png",
+    "/frames/images/surf/8.png",
+    "/frames/images/surf/9.png",
+    "/frames/images/surf/10.png",
+    "/frames/images/surf/11.png",
+    "/frames/images/surf/12.png",
+    "/frames/images/surf/13.png",
+    "/frames/images/surf/14.png",
+    "/frames/images/surf/15.png",
+    "/frames/images/surf/16.png",
+    "/frames/images/surf/17.png",
+    "/frames/images/surf/18.png",
+    "/frames/images/surf/19.png",
+    "/frames/images/surf/20.png",
 
   ];
 
@@ -120,10 +110,6 @@ categories:
           .removeIndicators() // add indicators (requires plugin)
           .addTo(controller);
 
-  // handle form change
-  $("form.move input[name=duration]:radio").change(function () {
-    scene.duration($(this).val());
-  });
 
 </script>
 
