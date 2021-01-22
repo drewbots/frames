@@ -1,15 +1,17 @@
-$('.js-menu, .js-menu2').on('click', function () {
-    var bodyClass;
-    if($(this).is('.js-menu'))
-        bodyClass = 'menu-open';
-    else
-        bodyClass = 'bottom-open';
+<script>
+    $('.js-menu, .js-menu2').on('click', function () {
+        var bodyClass;
+        if($(this).is('.js-menu'))
+            bodyClass = 'menu-open';
+        else
+            bodyClass = 'bottom-open';
 
-    if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-        $('body').removeClass(bodyClass);
-    } else {
-        $(this).addClass('active');
-        $('body').addClass(bodyClass);
-    }
-});
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('body').removeClass(bodyClass);
+        } else {
+            $(this).addClass('active');
+            $('body').addClass(bodyClass);
+        }
+    });
+</script>
