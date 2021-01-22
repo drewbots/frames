@@ -1,0 +1,167 @@
+---
+id: 1
+title: Surf
+author: drew
+layout: default
+permalink: /surf/
+categories:
+  - Sports
+---
+
+                
+<script>
+         var _page_conf = {
+             // image width and height
+             image: {
+                {% for page in site.data.postdata %}
+                {% if page.main == "surfmain" %}
+                width: {{ page.xsize }},
+                height: {{ page.ysize }}
+                {% endif %}
+                {% endfor %}
+             },
+
+             // pointers and their targets
+             targets: [
+                 
+              {% for page in site.data.postdata %}
+                {% if page.shortname == "surf" %}
+
+                 {
+                    x: {{ page.xpt }}, // these are
+                    y: {{ page.ypt }}, // target values
+                    elem: ".pointer{{ page.num }}" //this is pointer element id for this target
+                 },
+
+
+                {% endif %}
+                {% endfor %}
+
+
+             ]
+         };
+     </script>
+
+</head>
+
+<body onload="loaded()">
+
+<style>
+  .backdrop {
+    background-image: url('{{ site.baseurl }}/images/surf/surfbg.jpg');
+  }
+</style>
+
+{% include_relative header.html %}
+
+
+
+
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+<div style="height:300vh; position:absolute; width:20px;"></div>
+<div id="imagesequence" id="trigger">
+  <img id="myimg" src="/images/surf/1.png" style="display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;">
+</div>
+
+<script>
+  // define images
+  var images = [
+    "/images/surf/1.png",
+    "/images/surf/2.png",
+    "/images/surf/3.png",
+    "/images/surf/4.png",
+    "/images/surf/5.png",
+    "/images/surf/6.png",
+    "/images/surf/7.png",
+    "/images/surf/8.png",
+    "/images/surf/9.png",
+    "/images/surf/10.png",
+    "/images/surf/11.png",
+    "/images/surf/12.png",
+    "/images/surf/13.png",
+    "/images/surf/14.png",
+    "/images/surf/15.png",
+    "/images/surf/16.png",
+    "/images/surf/17.png",
+    "/images/surf/18.png",
+    "/images/surf/19.png",
+    "/images/surf/20.png",
+
+  ];
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: "curImg",       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $("#myimg").attr("src", images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+  // handle form change
+  $("form.move input[name=duration]:radio").change(function () {
+    scene.duration($(this).val());
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+<a class="js-menu2">
+  <img class="logo infobtn" src="{{site.baseurl}}/images/infoico.png">
+</a>
+
+<div class="bottommenu align-center">
+  <p>Most chill surf gear<br>Get it at Swell.com ></p>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

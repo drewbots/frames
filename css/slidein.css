@@ -1,0 +1,107 @@
+.sidemenu {
+  width: 400px;
+  height: 100%;
+  background: rgba(47, 47, 47, 0.88);
+  position: fixed;
+  top: 0;
+  z-index: 19;
+  right: -800px;
+  -webkit-transform: translateX(-400px);
+          transform: translateX(-400px);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.sidemenu img {
+  z-index: 5;
+  position: relative;
+}
+
+.menu-open .sidemenu {
+  -webkit-transform: translateX(-800px);
+          transform: translateX(-800px);
+}
+
+@media (max-width: 1001px) {
+.sidemenu {
+  width: 100%;
+  right: auto;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.menu-open .sidemenu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+
+}
+}
+
+.sidemenu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  overflow-y: scroll;
+  padding-top: 112px;
+  height: 100%;
+}
+
+.sidemenu ul::-webkit-scrollbar { 
+    display: none; 
+}
+
+.sidemenu ul li {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.sidemenu ul li:hover {
+  background: #313131;
+}
+
+.sidemenu ul li a {
+padding: 15px;
+}
+
+.squaredup {
+
+    overflow: hidden;
+}
+
+.squaredup img {
+
+    width: 100%;
+}
+
+.prodnames {
+  padding: 0 10px;
+  min-width:0;
+}
+
+.prodnames h6 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 3px;
+}
+
+.prodnames p {
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.prodnames .button {
+    margin-bottom: 0;
+    height: 22px;
+    line-height: 21px;
+    width: 100%;
+    padding: 0;
+}
+
+
+
