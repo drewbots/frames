@@ -1,31 +1,24 @@
-
-    {% if page.previous %}
-        {% assign previous = page.previous %}
-    {% else %}
-        {% assign previous = site.posts[0] %}
-    {% endif %}
-<!--         <a class="equalize-left flex flex-col justify-center" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
-           <h6><i class="icon ion-ios-arrow-left"></i></h6>
-        </a> -->
-
-    {% if page.next %}
-        {% assign next = page.next %}
-    {% else %}
-        {%comment%}
-           As the array index start at zero we substract 1 to the total count,
-           we then get the last post index in the site.posts array
-        {%endcomment%}
-        {% assign last lastPostIndex = site.posts | size | minus: 1 %}
-        {% assign next = site.posts[lastPostIndex] %}
-    {% endif %}
+{% if page.previous %}
+    {% assign previous = page.previous %}
+{% else %}
+    {% assign previous = site.posts[0] %}
+{% endif %}
     
-    <style>
-        ion-icon {
-          --ionicon-stroke-width: 16px;
-        }
-    </style>
+<a class="equalize-left flex flex-col justify-center" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
+   <h6><i class="icon ion-ios-arrow-left"></i></h6>
+</a>
 
-        <a class="equalize-right flex flex-col justify-center" href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
-            <h6 class=" flex flex-col justify-center"><ion-icon name="chevron-forward-outline"></ion-icon></h6>
-        </a>
+{% if page.next %}
+    {% assign next = page.next %}
+{% else %}
+    {%comment%}
+       As the array index start at zero we substract 1 to the total count,
+       we then get the last post index in the site.posts array
+    {%endcomment%}
+    {% assign last lastPostIndex = site.posts | size | minus: 1 %}
+    {% assign next = site.posts[lastPostIndex] %}
+{% endif %}
 
+<a class="equalize-right flex flex-col justify-center" href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
+    <h6 class=" flex flex-col justify-center"><ion-icon name="chevron-forward-outline"></ion-icon></h6>
+</a>
