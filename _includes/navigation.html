@@ -19,7 +19,9 @@
     {% assign next = site.posts[lastPostIndex] %}
 {% endif %}
 <style>
-    --ionicon-stroke-width: 16px;
+    ion-icon {
+  --ionicon-stroke-width: 16px;
+}
 </style>
 <a class="equalize-right flex align-center justify-center" href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
     <h6 class=" flex flex-col justify-center"><ion-icon name="chevron-forward-outline"></ion-icon></h6>
