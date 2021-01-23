@@ -162,7 +162,7 @@ a.equalize-right {
     /* position: fixed; */
     position: fixed;
     float: right;
-    bottom: 0;
+    top: 0;
     right: 0;
     padding: 22px;
     z-index: 21;
