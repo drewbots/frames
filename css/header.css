@@ -42,7 +42,8 @@
   position: fixed;
   left: -20px;
   z-index: 1;
-  bottom: -332px;
+  bottom: -132px;
+  transform: rotate(3deg);
   top: auto;
   border: solid 2px black;
 }
