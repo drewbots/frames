@@ -45,12 +45,12 @@
 }
 
 .navbtn {
-  padding: 1px 8px 1px 8px;
-  margin: 0 0 0 7px;
+  padding: 1px 6px 1px 6px;
+  margin: 0;
   color: white;
   background-color: black;
   line-height: 24px;
-  top: 5px;
+  height: 100%;
   right: 0;
   z-index: 2;
   font-family: 'Abhaya Libre', serif;
