@@ -4,9 +4,9 @@
     {% assign previous = site.posts[0] %}
 {% endif %}
     
-<a class="equalize-left flex flex-col justify-center" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
+<!-- <a class="equalize-left flex flex-col justify-center" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
    <h6><i class="icon ion-ios-arrow-left"></i></h6>
-</a>
+</a> -->
 
 {% if page.next %}
     {% assign next = page.next %}
@@ -18,11 +18,7 @@
     {% assign last lastPostIndex = site.posts | size | minus: 1 %}
     {% assign next = site.posts[lastPostIndex] %}
 {% endif %}
-<style>
-    ion-icon {
-  --ionicon-stroke-width: 16px;
-}
-</style>
-<a class="navbtn flex align-center justify-center" href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
-    <h4 class="flex align-center justify-center"><ion-icon name="chevron-forward-outline"></ion-icon></h4>
+
+<a href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
+    <h4 class="navbtn flex align-center justify-center"><ion-icon name="chevron-forward-outline"></ion-icon></h4>
 </a>
