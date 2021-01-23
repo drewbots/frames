@@ -1,0 +1,76 @@
+---
+id: 1
+title: Mickey Clark Slob
+author: drew
+layout: default
+permalink: /slob/
+categories:
+  - Sports
+---
+
+<script>
+  // define images
+  var images = [
+    "/frames/images/bsslob/Frame 1.png",
+    "/frames/images/bsslob/Frame 2.png",
+    "/frames/images/bsslob/Frame 3.png",
+    "/frames/images/bsslob/Frame 4.png",
+    "/frames/images/bsslob/Frame 5.png",
+    "/frames/images/bsslob/Frame 6.png",
+    "/frames/images/bsslob/Frame 7.png",
+    "/frames/images/bsslob/Frame 8.png",
+    "/frames/images/bsslob/Frame 9.png",
+    "/frames/images/bsslob/Frame 10.png",
+    "/frames/images/bsslob/Frame 11.png",
+    "/frames/images/bsslob/Frame 12.png",
+    "/frames/images/bsslob/Frame 13.png",
+    "/frames/images/bsslob/Frame 14.png",
+    "/frames/images/bsslob/Frame 15.png",
+    "/frames/images/bsslob/Frame 16.png",
+
+  ];
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: "curImg",       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $("#myimg").attr("src", images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+</script>
+
+<body onload="loaded()">
+
+<a class="" href="/">
+  <p class="logowrap">ClllIPS</p>
+</a>
+
+<div style="height:300vh; position:absolute; width:20px;"></div>
+
+<div id="imagesequence" id="trigger">
+  <img id="myimg" src="/frames/images/surf/1.png" style="display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;">
+</div>
+
+<p class="bottommenutext"><a href="https://instagram.com/sealtooth">@SEALTOOTH</a> | OAHU</p>
+
+
+
