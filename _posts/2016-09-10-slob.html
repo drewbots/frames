@@ -9,6 +9,42 @@ categories:
 ---
 
 <script>
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+  "/frames/images/slob/Frame1.jpg",
+  "/frames/images/slob/Frame2.jpg",
+  "/frames/images/slob/Frame3.jpg",
+  "/frames/images/slob/Frame4.jpg",
+  "/frames/images/slob/Frame5.jpg",
+  "/frames/images/slob/Frame6.jpg",
+  "/frames/images/slob/Frame7.jpg",
+  "/frames/images/slob/Frame8.jpg",
+  "/frames/images/slob/Frame9.jpg",
+  "/frames/images/slob/Frame10.jpg",
+  "/frames/images/slob/Frame11.jpg",
+  "/frames/images/slob/Frame12.jpg",
+  "/frames/images/slob/Frame13.jpg",
+  "/frames/images/slob/Frame14.jpg",
+  "/frames/images/slob/Frame15.jpg",
+  "/frames/images/slob/Frame16.jpg",
+  "/frames/images/slob/Frame17.jpg",
+  "/frames/images/slob/Frame19.jpg",
+  "/frames/images/slob/Frame20.jpg",
+  "/frames/images/slob/Frame21.jpg",
+  "/frames/images/slob/Frame22.jpg",
+  "/frames/images/slob/Frame23.jpg",
+  "/frames/images/slob/Frame24.jpg"
+)
+
   // define images
   var images = [
     "/frames/images/slob/Frame1.jpg",

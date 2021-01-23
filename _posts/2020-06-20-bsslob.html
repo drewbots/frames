@@ -9,6 +9,35 @@ categories:
 ---
 
 <script>
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "/frames/images/bsslob/Frame1.jpg",
+    "/frames/images/bsslob/Frame2.jpg",
+    "/frames/images/bsslob/Frame3.jpg",
+    "/frames/images/bsslob/Frame4.jpg",
+    "/frames/images/bsslob/Frame5.jpg",
+    "/frames/images/bsslob/Frame6.jpg",
+    "/frames/images/bsslob/Frame7.jpg",
+    "/frames/images/bsslob/Frame8.jpg",
+    "/frames/images/bsslob/Frame9.jpg",
+    "/frames/images/bsslob/Frame10.jpg",
+    "/frames/images/bsslob/Frame11.jpg",
+    "/frames/images/bsslob/Frame12.jpg",
+    "/frames/images/bsslob/Frame13.jpg",
+    "/frames/images/bsslob/Frame14.jpg",
+    "/frames/images/bsslob/Frame15.jpg",
+    "/frames/images/bsslob/Frame16.jpg"
+)
+
   // define images
   var images = [
     "/frames/images/bsslob/Frame1.jpg",
