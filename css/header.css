@@ -18,6 +18,7 @@
     color: #303030;
     text-align: center;
     margin: 0;
+    z-index: 22;
 }
 
 .bottommenutext {
