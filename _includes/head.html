@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ page.title }}</title>
     <meta name="description" content="{{ site.description }}" />
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -17,7 +17,7 @@
 
     <link rel="icon" href="{{site.baseurl}}/images/favicon.png">
     <link href="{{site.baseurl}}/css/header.css" rel="stylesheet">
-    <link href="{{site.baseurl}}/css/pages.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/css/nav.css" rel="stylesheet">
     <link href="{{site.baseurl}}/css/simpleflex.css" rel="stylesheet">
     <link href="{{site.baseurl}}/css/normalize.css" rel="stylesheet">
     
