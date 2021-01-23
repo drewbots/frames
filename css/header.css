@@ -18,11 +18,11 @@
 
 .logowrap {
   padding: 1px 8px 1px 8px;
-  margin: 0 0 0 7px;
+  margin: 5px 0 0 7px;
   color: white;
   background-color: black;
   line-height: 24px;
-  top: 5px;
+  top: 0px;
   z-index: 2;
   font-family: 'Abhaya Libre', serif;
   font-weight: 700;
@@ -32,11 +32,11 @@
 
 .bottommenutext {
   padding: 1px 8px 1px 8px;
-  margin: 0 0 0 7px;
+  margin: 0 0 5px 7px;
   color: white;
   background-color: black;
   line-height: 24px;
-  bottom: 5px;
+  bottom: 0;
   z-index: 2;
   font-family: 'Abhaya Libre', serif;
   font-weight: 700;
@@ -61,16 +61,10 @@
 
 @media (max-width: 1000px) {
 
-  .logo {
-    transition: none;
-    -webkit-transition: none;
-    box-shadow: #000 0em 0em 0em;
-  }
-
-  .logo:hover {
-    -webkit-transform: none;
-    transform: none;
-  }
+.navbtn {
+  height: 30px;
+  padding: 5px 7px 0 0;
+}
 
 }
 
