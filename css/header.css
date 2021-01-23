@@ -16,6 +16,11 @@
   background: rgb(57, 57, 58);
 }
 
+body {
+  position: fixed;
+  overflow: hidden; 
+}
+
 .logowrap {
   padding: 1px 8px 1px 8px;
   margin: 5px 0 0 7px;
