@@ -1,5 +1,20 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-/* Header */
+::-webkit-scrollbar-thumb {
+  background: rgb(34, 34, 34);
+  border-radius:0px;
+  height:10px;                           
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(34, 34, 34); 
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(57, 57, 58);
+}
 
 .logowrap {
   padding: 1px 8px 1px 8px;
