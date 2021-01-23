@@ -159,9 +159,7 @@ a.equalize-left {
 }
 
 a.equalize-right {
-    /* position: fixed; */
     position: fixed;
-    float: right;
     top: 0;
     right: 0;
     padding: 22px;
@@ -173,11 +171,6 @@ a.equalize-right {
     /* border-top: 2px solid #303030; */
     /* border-bottom: 2px solid #303030; */
     /* z-index: 20; */
-    transition: all 0.3s ease;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    box-shadow: #000 0em 0em 0em;
 }
 
 a.equalize-left:hover, a.equalize-left:visited, a.equalize-left:focus {
