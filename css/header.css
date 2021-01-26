@@ -84,7 +84,7 @@ body {
 
 .bottommenu_text {
   padding: 1px 8px 1px 8px;
-  margin: 0 45px 0 0;
+  margin: 0;
   color: white;
   background-color: black;
   line-height: 24px;
@@ -103,7 +103,7 @@ body {
 
 .photog_text {
   padding: 1px 8px 1px 8px;
-  margin: 0 45px 0 0;
+  margin: 0;
   color: white;
   background-color: black;
   line-height: 24px;
