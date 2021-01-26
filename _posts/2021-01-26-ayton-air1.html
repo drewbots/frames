@@ -1,0 +1,114 @@
+---
+id: 1
+title: Ayton Anti Judo Air
+author: drew
+layout: default
+permalink: /eithan-osborne-anti-judo-air/
+categories:
+  - Sports
+---
+
+<script>
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "/images/ayton-air1/1.jpg",
+    "/images/ayton-air1/2.jpg",
+    "/images/ayton-air1/3.jpg",
+    "/images/ayton-air1/4.jpg",
+    "/images/ayton-air1/5.jpg",
+    "/images/ayton-air1/6.jpg",
+    "/images/ayton-air1/7.jpg",
+    "/images/ayton-air1/8.jpg",
+    "/images/ayton-air1/9.jpg",
+    "/images/ayton-air1/10.jpg",
+    "/images/ayton-air1/12.jpg",
+    "/images/ayton-air1/13.jpg",
+    "/images/ayton-air1/14.jpg",
+    "/images/ayton-air1/15.jpg",
+    "/images/ayton-air1/16.jpg",
+    "/images/ayton-air1/17.jpg",
+    "/images/ayton-air1/18.jpg",
+    "/images/ayton-air1/19.jpg"
+)
+
+  // define images
+  var images = [
+    "/images/ayton-air1/1.jpg",
+    "/images/ayton-air1/2.jpg",
+    "/images/ayton-air1/3.jpg",
+    "/images/ayton-air1/4.jpg",
+    "/images/ayton-air1/5.jpg",
+    "/images/ayton-air1/6.jpg",
+    "/images/ayton-air1/7.jpg",
+    "/images/ayton-air1/8.jpg",
+    "/images/ayton-air1/9.jpg",
+    "/images/ayton-air1/10.jpg",
+    "/images/ayton-air1/12.jpg",
+    "/images/ayton-air1/13.jpg",
+    "/images/ayton-air1/14.jpg",
+    "/images/ayton-air1/15.jpg",
+    "/images/ayton-air1/16.jpg",
+    "/images/ayton-air1/17.jpg",
+    "/images/ayton-air1/18.jpg",
+    "/images/ayton-air1/19.jpg"
+
+  ];
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: "curImg",       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $("#myimg").attr("src", images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+</script>
+
+</head>
+
+<body>
+
+<div style="height:280vh; position:absolute; width:20px;"></div>
+
+<div id="imagesequence" id="trigger">
+  <img id="myimg" src="/images/ayton-air1/1.jpg" style="display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;">
+</div>
+
+<div class="bottommenu_wrap">
+  <p class="bottommenu_text">
+    <a target="_blank" href="https://instagram.com/eithanosborne">@eithanosborne</a> for <a target="_blank" href="https://chapter11.tv">CH11</a>
+  </p>
+</div>
+
+<div class="photog_wrap">
+  <p class="photog_text">
+    cr <a target="_blank" href="https://instagram.com/_huntermartinez">@_huntermartinez</a>
+  </p>
+</div>
