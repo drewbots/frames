@@ -38,8 +38,9 @@ body {
   position: fixed;
   margin: 5px 0 7px 0;
   bottom: 0;
-  right: 0;
+  right: 42px;
   z-index: 2;
+  font-size: 26px;
 }
 
 .bottommenu_wrap {
