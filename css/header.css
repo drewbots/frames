@@ -79,6 +79,10 @@ body {
   align-items: center;
 }
 
+.cameraicon {
+  display: inline-block;
+}
+
 .navbtn {
   padding: 1px 6px 1px 6px;
   margin: 0;
@@ -101,5 +105,8 @@ body {
     margin: 5px 7px 0 0;
   }
 
+  .bottommenu_wrap {
+    flex-direction: column;
+  }
 }
 
