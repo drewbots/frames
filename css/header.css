@@ -16,8 +16,12 @@
   background: rgb(57, 57, 58);
 }
 
-a:hover {
+a {
   color: rgb(0, 0, 238);
+}
+
+a:hover {
+  color: purple;
 }
 
 body {
