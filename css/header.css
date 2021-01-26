@@ -51,8 +51,12 @@ body {
   font-size: 22px;
 }
 
-.insta a {
+.insta a, .insta a:visited {
   color: black;
+}
+
+.insta a:hover {
+  color: purple;
 }
 
 .bottommenu_wrap {
