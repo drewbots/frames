@@ -96,12 +96,16 @@ body {
 }
 
 .photog {
-  margin-left: 4px;
+
 }
 
 .photog_wrap {
-  display: flex;
-  align-items: center;
+  position: fixed;
+  margin: 0 7px 5px 0;
+  bottom: 0;
+  right: 30px;
+  z-index: 2;
+  font-size: 22px;
 }
 
 .cameraicon {
