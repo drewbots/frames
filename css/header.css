@@ -34,11 +34,20 @@ body {
   font-size: 19px;
 }
 
+.insta {
+  position: fixed;
+  margin: 5px 0 7px 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
 .bottommenu_wrap {
   position: fixed;
   margin: 0 0 5px 7px;
   bottom: 0;
   z-index: 2;
+  display: flex;
 }
 
 .bottommenutext {
