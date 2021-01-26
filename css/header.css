@@ -52,6 +52,7 @@ body {
 
 .bottommenu_text {
   padding: 1px 8px 1px 8px;
+  margin: 0 4px 0 0;
   color: white;
   background-color: black;
   line-height: 24px;
