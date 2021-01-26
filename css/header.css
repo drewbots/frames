@@ -134,7 +134,7 @@ body {
 @media (max-width: 1000px) {
 
   .navbtn {
-    height: 30px;
+    height: 35px;
     margin: 5px 7px 0 0;
   }
 
@@ -143,8 +143,15 @@ body {
   }
 
   .insta {
-    right: 0px;
+    position: fixed;
+    right: 0;
+    left: 74px;
+    margin: 7px 9px 0px 8px;
+    font-size: 24px;
   }
 
+  .photog_wrap {
+    margin: 0 0px 5px 0;
+  }
 }
 
