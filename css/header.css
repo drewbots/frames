@@ -16,11 +16,11 @@
   background: black;
 }
 
-.bottommenu_text a, .bottommenu_text a:visited {
+.bottommenu_text a, .bottommenu_text a:visited, .photog_text a, .photog_text a:visited {
   color: white;
 }
 
-.bottommenu_text a:hover {
+.bottommenu_text a:hover, .photog_text:hover {
   color: purple;
 }
 
