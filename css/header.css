@@ -16,11 +16,11 @@
   background: rgb(57, 57, 58);
 }
 
-a {
+.bottommenu_text a {
   color: white;
 }
 
-a:hover {
+.bottommenu_text a:hover {
   color: purple;
 }
 
