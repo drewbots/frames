@@ -33,12 +33,13 @@
 </script>
 
 <style type="text/css">
-    #loaderContainer {
-  background-color: rgba(255, 255, 255, 0.95); /* adjust the 0.95 for transparency */
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+#loaderContainer {
+    left: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 }
 .loader {
   border: 16px solid #f3f3f3;
@@ -50,6 +51,7 @@
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -67,6 +69,7 @@
   }
 }
 </style>
+
 <div id="loaderContainer">
   <div class="loader"></div>
 </div>
