@@ -55,6 +55,8 @@ body {
 }
 
 .insta {
+  position: fixed;
+  right: 30px;
   margin: 0 0px 0px 7px;
   font-size: 22px;
 }
