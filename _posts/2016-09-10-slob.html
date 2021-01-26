@@ -94,8 +94,8 @@ preload(
   var controller = new ScrollMagic.Controller();
 
   // build scene
-  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1400})
-          .setTween(tween)
+  if(var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1400})
+          .setTween(tween))
           .removeIndicators() // add indicators (requires plugin)
           .addTo(controller);
 
