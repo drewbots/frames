@@ -51,11 +51,11 @@ body {
   font-size: 22px;
 }
 
-.insta a, .insta a:visited {
+a, a:visited {
   color: black;
 }
 
-.insta a:hover {
+a:hover {
   color: purple;
 }
 
