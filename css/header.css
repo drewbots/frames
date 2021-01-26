@@ -16,6 +16,10 @@
   background: rgb(57, 57, 58);
 }
 
+a:hover {
+  color: rgb(0, 0, 238);
+}
+
 body {
   overscroll-behavior-y: none
 }
