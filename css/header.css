@@ -42,6 +42,22 @@ body {
   font-size: 19px;
 }
 
+.logowrap p {
+  color: white;
+  line-height: 24px;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.logowrap a, .logowrap a:visited {
+  color: white;
+}
+
+.logowrap a:hover {
+  color: purple;
+}
+
 .insta {
   position: fixed;
   margin: 0 7px 5px 0;
@@ -51,11 +67,11 @@ body {
   font-size: 22px;
 }
 
-a, a:visited {
+.insta a, a:visited {
   color: black;
 }
 
-a:hover {
+.insta a:hover {
   color: purple;
 }
 
