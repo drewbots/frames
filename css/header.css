@@ -36,15 +36,8 @@ body {
 
 .logowrap {
   padding: 1px 8px 1px 8px;
-  color: white;
   background-color: black;
-  line-height: 24px;
-
   z-index: 2;
-  font-family: 'Abhaya Libre', serif;
-  font-weight: 700;
-
-  font-size: 19px;
 }
 
 .logowrap p {
