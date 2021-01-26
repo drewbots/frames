@@ -51,6 +51,10 @@ body {
   font-size: 22px;
 }
 
+.insta a {
+  color: black;
+}
+
 .bottommenu_wrap {
   position: fixed;
   margin: 0 0 5px 7px;
