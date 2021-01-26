@@ -80,9 +80,9 @@ preload(
   var controller = new ScrollMagic.Controller();
 
   // build scene
-  if(document.getElementByIdName('trigger').length > 0){
+  if(document.getElementByClassName('trigger').length > 0){
     var scene = new ScrollMagic.Scene({
-      triggerElement: "#trigger", 
+      triggerElement: ".trigger", 
       duration: 1400
     })
     .setTween(tween)
@@ -97,7 +97,7 @@ preload(
 
 <div style="height:300vh; position:absolute; width:20px;"></div>
 
-<div id="imagesequence" id="trigger">
+<div id="imagesequence trigger" id="trigger">
   <img id="myimg" src="/images/bsslob/Frame1.jpg" style="display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;">
 </div>
 
