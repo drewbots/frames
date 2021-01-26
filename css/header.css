@@ -53,6 +53,7 @@ body {
 
 .logowrap a, .logowrap a:visited {
   color: white;
+  text-decoration: none; 
 }
 
 .logowrap a:hover {
