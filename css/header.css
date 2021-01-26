@@ -108,5 +108,10 @@ body {
   .bottommenu_wrap {
     flex-direction: column;
   }
+
+  .insta {
+    right: 0px;
+  }
+
 }
 
