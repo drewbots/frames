@@ -1,14 +1,7 @@
-<div class="brand_wrap">
-    <div class="logo">
-      <a href="/">
-        <p>C|||IPS</p>
-      </a>
-    </div>
-    <div class="insta">
-        <a target="_blank" href="https://instagram.com/clllips">
-            <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-    </div>
+<div class="logo">
+  <a href="/">
+    <p>C|||IPS</p>
+  </a>
 </div>
 
 
@@ -40,6 +33,11 @@
 <script type="text/javascript">
     $(window).on("load", function() {
     $('#loaderContainer').hide();
+    });
+
+    $(window).load(function(){
+  // this will ensure that all content has loaded before the div is shown
+    $("#insta").show();
     });
 </script>
 
@@ -90,4 +88,10 @@
 
 <div id="loaderContainer">
   <div class="loader"></div>
+</div>
+
+<div class="insta">
+    <a target="_blank" href="https://instagram.com/clllips">
+        <ion-icon name="logo-instagram"></ion-icon>
+    </a>
 </div>

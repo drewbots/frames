@@ -28,18 +28,13 @@ body {
   overscroll-behavior-y: none
 }
 
-.brand_wrap {
-  margin: 5px 0 0 7px;
-  top: 0px;
-  position: fixed;
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   padding: 1px 8px 1px 8px;
   background-color: black;
   z-index: 2;
+  margin: 5px 0 0 7px;
+  top: 0px;
+  position: fixed;
 }
 
 .logo p {
