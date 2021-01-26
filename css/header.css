@@ -20,7 +20,7 @@
   color: white;
 }
 
-.bottommenu_text a:hover, .photog_text:hover {
+.bottommenu_text a:hover, .photog_text a:hover {
   color: purple;
 }
 
