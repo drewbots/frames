@@ -16,7 +16,7 @@
   background: rgb(57, 57, 58);
 }
 
-.bottommenu_text a {
+.bottommenu_text a, .bottommenu_text a:visited {
   color: white;
 }
 
@@ -68,7 +68,7 @@ body {
   font-size: 22px;
 }
 
-.insta a, a:visited {
+.insta a, .insta a:visited {
   color: black;
 }
 
