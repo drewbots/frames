@@ -36,13 +36,13 @@ body {
   align-items: center;
 }
 
-.logowrap {
+.logo {
   padding: 1px 8px 1px 8px;
   background-color: black;
   z-index: 2;
 }
 
-.logowrap p {
+.logo p {
   line-height: 24px;
   font-family: 'Abhaya Libre', serif;
   font-weight: 700;
@@ -50,12 +50,12 @@ body {
   margin:0;
 }
 
-.logowrap a, .logowrap a:visited {
+.logo a, .logo a:visited {
   color: white;
   text-decoration: none; 
 }
 
-.logowrap a:hover {
+.logo a:hover {
   color: purple;
 }
 
