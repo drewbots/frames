@@ -24,3 +24,49 @@
 <a href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
     <h4 class="navbtn flex align-center justify-center"><ion-icon name="chevron-forward-outline"></ion-icon></h4>
 </a>
+
+<script type="text/javascript">
+    $(window).on("load", function() {
+    $('#loaderContainer').hide();
+        console.log("loader hide"); // delete this, it's just a sample to show thats loaded.
+    });
+</script>
+
+<style type="text/css">
+    #loaderContainer {
+  background-color: rgba(255, 255, 255, 0.95); /* adjust the 0.95 for transparency */
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  margin: 20% auto 0; /* Adjust the 20% to move the loader up or down. */
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+<div id="loaderContainer">
+  <div class="loader"></div>
+</div>
