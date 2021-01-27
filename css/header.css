@@ -25,7 +25,8 @@
 }
 
 body {
-  overscroll-behavior-y: none
+  overflow: auto;
+  overscroll-behavior-y: none;
 }
 
 .logo {
