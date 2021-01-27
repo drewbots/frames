@@ -24,10 +24,6 @@
   color: purple;
 }
 
-body {
-  position: fixed;
-}
-
 .logo {
   padding: 1px 8px 1px 8px;
   background-color: black;
