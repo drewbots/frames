@@ -55,6 +55,7 @@
   right: 0;
   margin: 5px 41px 0px 0px;
   font-size: 22px;
+  display: none;
 }
 
 .insta a, .insta a:visited {
