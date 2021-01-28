@@ -52,8 +52,9 @@
 
 .insta {
   position: fixed;
-  right: 0;
-  margin: 5px 41px 0px 0px;
+  right: auto;
+  left: 75px;
+  margin: 7px 9px 0px 8px;
   font-size: 22px;
   display: none;
 }
@@ -115,11 +116,11 @@
   font-family: 'Abhaya Libre', serif;
   font-weight: 700;
   font-size: 17px;
-  margin: 0;
+  margin: 5px 7px 0 0;
   color: white;
   background-color: black;
   line-height: 24px;
-  height: 100%;
+  height: 35px;
   right: 0;
   z-index: 2;
   font-family: 'Abhaya Libre', serif;
@@ -130,19 +131,8 @@
 
 @media (max-width: 1000px) {
 
-  .navbtn {
-    height: 35px;
-    margin: 5px 7px 0 0;
-  }
-
   .bottommenu_wrap {
     flex-direction: column;
-  }
-
-  .insta {
-    right: auto;
-    left: 75px;
-    margin: 7px 9px 0px 8px;
   }
 
   .photog_wrap {
