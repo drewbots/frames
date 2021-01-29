@@ -95,7 +95,7 @@
 
 .photog_text {
   padding: 1px 8px 1px 8px;
-  margin: 0;
+  margin: 0 7px 5px 0;
   color: white;
   background-color: black;
   line-height: 24px;
@@ -133,10 +133,6 @@
 
   .bottommenu_wrap {
     flex-direction: column;
-  }
-
-  .photog_wrap {
-    margin: 0 7px 5px 0;
   }
 
   .bottommenu_text, .photog_text {
