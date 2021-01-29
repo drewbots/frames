@@ -87,7 +87,7 @@
 
 .photog_wrap {
   position: fixed;
-  margin: 0 42px 5px 0;
+  margin: 0 7px 5px 0;
   bottom: 0;
   right: 0px;
   z-index: 2;
@@ -95,7 +95,7 @@
 
 .photog_text {
   padding: 1px 8px 1px 8px;
-  margin: 0 7px 5px 0;
+  margin: 0;
   color: white;
   background-color: black;
   line-height: 24px;
