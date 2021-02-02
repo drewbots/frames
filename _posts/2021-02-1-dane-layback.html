@@ -86,9 +86,9 @@ preload(
           .addTo(controller);
 
   
-  $('.hover').on('touchstart touchend', function(e) {
-          $(this).toggleClass('hover_effect');
-      });
+    $('#myimg').on('click', function(){
+        $('.hideit').toggle();
+    });
 
 </script>
 
@@ -110,7 +110,7 @@ preload(
   <img id="myimg" class="hover_effect" src="/images/dane-layback/1.jpg" style="display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;">
 </div>
 
-<div class="bottommenu_wrap">
+<div class="bottommenu_wrap hideit">
   <p class="bottommenu_text">
     <a target="_blank" href="https://instagram.com/sealtooth">@sealtooth</a> for <a target="_blank" href="https://chapter11.tv">CH11</a>
   </p>
