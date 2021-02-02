@@ -8,6 +8,14 @@ categories:
   - Sports
 ---
 
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.myimg').on('click', function(){
+      $('.hideit').toggle();
+    });
+  });
+</script>
+
 <script>
 
 var images = [];
@@ -84,11 +92,6 @@ preload(
           .setTween(tween)
           .removeIndicators() // add indicators (requires plugin)
           .addTo(controller);
-
-  
-    $('#myimg').on('click', function(){
-        $('.hideit').toggle();
-    });
 
 </script>
 
