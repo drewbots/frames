@@ -5,11 +5,30 @@
 </div>
 
 
-{% if page.next.url %}
+{% if page.previous %}
+    {% assign previous = page.previous %}
+{% else %}
+    {% assign previous = site.posts[0] %}
+{% endif %}
+    
+<!-- <a class="equalize-left flex flex-col justify-center" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
+   <h6><i class="icon ion-ios-arrow-left"></i></h6>
+</a> -->
+
+{% if page.next %}
+    {% assign next = page.next %}
+{% else %}
+    {%comment%}
+       As the array index start at zero we substract 1 to the total count,
+       we then get the last post index in the site.posts array
+    {%endcomment%}
+    {% assign last lastPostIndex = site.posts | size | minus: 1 %}
+    {% assign next = site.posts[lastPostIndex] %}
+{% endif %}
+
 <a href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
     <h4 class="navbtn flex align-center justify-center hideit"><ion-icon name="chevron-forward-outline"></ion-icon></h4>
 </a>
-{% endif %}
 
 <script type="text/javascript">
     $(window).on("load", function() {
