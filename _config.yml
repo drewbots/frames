@@ -11,9 +11,9 @@ paginate_path: "page:num"
 
 permalink: /:title/
 relative_permalinks: false
-# url: https://shopjoy.com
-#port: 2106
-# baseurl: https://shopjoy.com
+url: https://clllips.com
+port: 2106
+baseurl: https://clllips.com
 name: Frames
 
 # Themes are encouraged to use these universal variables 
