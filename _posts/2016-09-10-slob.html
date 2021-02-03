@@ -1,0 +1,124 @@
+---
+id: 1
+title: Mickey Clark Slob
+author: drew
+layout: default
+permalink: /mickey-clark-slob/
+categories:
+  - Sports
+---
+
+<script>
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+  "/images/slob/Frame1.jpg",
+  "/images/slob/Frame2.jpg",
+  "/images/slob/Frame3.jpg",
+  "/images/slob/Frame4.jpg",
+  "/images/slob/Frame5.jpg",
+  "/images/slob/Frame6.jpg",
+  "/images/slob/Frame7.jpg",
+  "/images/slob/Frame8.jpg",
+  "/images/slob/Frame9.jpg",
+  "/images/slob/Frame10.jpg",
+  "/images/slob/Frame11.jpg",
+  "/images/slob/Frame12.jpg",
+  "/images/slob/Frame13.jpg",
+  "/images/slob/Frame14.jpg",
+  "/images/slob/Frame15.jpg",
+  "/images/slob/Frame16.jpg",
+  "/images/slob/Frame17.jpg",
+  "/images/slob/Frame19.jpg",
+  "/images/slob/Frame20.jpg",
+  "/images/slob/Frame21.jpg",
+  "/images/slob/Frame22.jpg",
+  "/images/slob/Frame23.jpg",
+  "/images/slob/Frame24.jpg"
+)
+
+  // define images
+  var images = [
+    "/images/slob/Frame1.jpg",
+    "/images/slob/Frame2.jpg",
+    "/images/slob/Frame3.jpg",
+    "/images/slob/Frame4.jpg",
+    "/images/slob/Frame5.jpg",
+    "/images/slob/Frame6.jpg",
+    "/images/slob/Frame7.jpg",
+    "/images/slob/Frame8.jpg",
+    "/images/slob/Frame9.jpg",
+    "/images/slob/Frame10.jpg",
+    "/images/slob/Frame11.jpg",
+    "/images/slob/Frame12.jpg",
+    "/images/slob/Frame13.jpg",
+    "/images/slob/Frame14.jpg",
+    "/images/slob/Frame15.jpg",
+    "/images/slob/Frame16.jpg",
+    "/images/slob/Frame17.jpg",
+    "/images/slob/Frame19.jpg",
+    "/images/slob/Frame20.jpg",
+    "/images/slob/Frame21.jpg",
+    "/images/slob/Frame22.jpg",
+    "/images/slob/Frame23.jpg",
+    "/images/slob/Frame24.jpg",
+
+  ];
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: "curImg",       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $("#myimg").attr("src", images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+</script>
+
+</head>
+
+<body>
+
+<div style="height:360vh; position:absolute; width:20px;"></div>
+
+<div id="imagesequence" id="trigger">
+  <img id="myimg" src="/images/slob/Frame1.jpg" style="display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;">
+</div>
+
+<div class="bottommenu_wrap">
+  <p class="bottommenu_text">
+    <a target="_blank" href="https://instagram.com/_mitchard">@_MITCHARD</a> for <a target="_blank" href="https://chapter11.tv">CH11</a>
+  </p>
+</div>
+
+<div class="photog_wrap">
+  <p class="photog_text">
+    cr <a target="_blank" href="https://instagram.com/_huntermartinez">@_huntermartinez</a>
+  </p>
+</div>
