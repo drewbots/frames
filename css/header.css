@@ -16,6 +16,10 @@
   background: black;
 }
 
+ion-icon {
+  pointer-events: none;
+}
+
 .bottommenu_text a, .bottommenu_text a:visited, .photog_text a, .photog_text a:visited {
   color: white;
 }
