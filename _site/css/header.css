@@ -1,97 +1,189 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
 
-/* Header */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius:0px;
+  height:10px;                           
+}
 
-.logowrap {
-  padding: 20px;
-  display: inline-block;
-  z-index: 21;
-  position: relative;
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(34, 34, 34); 
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+.bottommenu_text a, .bottommenu_text a:visited, .photog_text a, .photog_text a:visited {
+  color: white;
+}
+
+.bottommenu_text a:hover, .photog_text a:hover {
+  color: purple;
 }
 
 .logo {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  z-index: 22;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  box-shadow: #000 0em 0em 0em;
-}
-
-.logo:hover {
-/*  -webkit-transform: scale(1.06);
-  transform: scale(1.06);*/
-  opacity: .8;
-}
-
-.logo.infobtn {
-  width: 50px;
-  height: 50px;
-}
-
-.logo.prodbtn {
-  width: 50px;
-  height: 50px;
-}
-
-.js-menu {
-  float: right;
-  padding: 20px;
-  z-index: 21;
-  position: relative;
-}
-
-.js-menu2 {
+  padding: 1px 8px 1px 8px;
+  background-color: black;
+  z-index: 2;
+  margin: 5px 0 0 7px;
+  top: 0px;
   position: fixed;
-  float: left;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  z-index: 21;
 }
 
-.bottommenu {
-  width: 100%;
-  height: 90px;
-  background: rgba(47, 47, 47, 0.88);
-  position: fixed;
-  left: 0;
-  z-index: 20;
-  bottom: -200px;
-  top: auto;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
-  transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
-  transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
-  transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91), -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
-}
-
-.bottom-open .bottommenu {
-  -webkit-transform: translateY(-200px);
-          transform: translateY(-200px);
-}
-
-.bottommenu p {
-  padding: 22px 20px 0px 80px;
-  margin: 0;
+.logo p {
   line-height: 24px;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 700;
+  font-size: 19px;
+  margin:0;
 }
 
+.logo a, .logo a:visited {
+  color: white;
+  text-decoration: none; 
+}
+
+.logo a:hover {
+  color: purple;
+}
+
+.insta {
+  position: fixed;
+  right: auto;
+  left: 75px;
+  margin: 7px 9px 0px 8px;
+  font-size: 22px;
+  display: none;
+}
+
+.insta a, .insta a:visited {
+  color: black;
+}
+
+.insta a:hover {
+  color: purple;
+}
+
+.bottommenu_wrap {
+  position: fixed;
+  margin: 0 0 5px 7px;
+  bottom: 0;
+  z-index: 2;
+}
+
+.bottommenu_text {
+  padding: 1px 8px 1px 8px;
+  margin: 0;
+  color: white;
+  background-color: black;
+  line-height: 24px;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.photog_wrap {
+  position: fixed;
+  margin: 0 7px 5px 0;
+  bottom: 0;
+  right: 0px;
+  z-index: 2;
+}
+
+.photog_text {
+  padding: 1px 8px 1px 8px;
+  margin: 0;
+  color: white;
+  background-color: black;
+  line-height: 24px;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.cameraicon {
+  display: inline-block;
+}
+
+.navbtn {
+  padding: 1px 8px 1px 8px;
+  color: white;
+  background-color: black;
+  line-height: 24px;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 700;
+  font-size: 17px;
+  margin: 5px 7px 0 0;
+  color: white;
+  background-color: black;
+  line-height: 24px;
+  height: 35px;
+  right: 0;
+  z-index: 2;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 700;
+  position: fixed;
+  font-size: 19px;
+}
 
 @media (max-width: 1000px) {
 
-  .logo {
-    transition: none;
-    -webkit-transition: none;
-    box-shadow: #000 0em 0em 0em;
+  .bottommenu_wrap {
+    flex-direction: column;
   }
 
-  .logo:hover {
-    -webkit-transform: none;
-    transform: none;
+  .bottommenu_text, .photog_text {
+    font-size: 15px;
   }
 
 }
 
+.navbtn ion-icon {
+  color: white
+}
+
+.navbtn:hover > ion-icon {
+  color: purple;
+}
+
+#loaderContainer {
+  position: fixed;
+  right: auto;
+  left: 75px;
+  margin: 2px 9px 0px 8px;
+}
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #000000;
+  width: 16px;
+  height: 16px;
+  margin: 5px 0 0 0;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

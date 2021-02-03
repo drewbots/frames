@@ -1,182 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ShopJoy</title>
+    <title>Frames</title>
     <description></description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 15 Feb 2019 02:21:16 -0800</pubDate>
-    <lastBuildDate>Fri, 15 Feb 2019 02:21:16 -0800</lastBuildDate>
-    <generator>Jekyll v3.7.4</generator>
+    <link>https://clllips.comhttps://clllips.com/</link>
+    <atom:link href="https://clllips.comhttps://clllips.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 02 Feb 2021 23:31:42 -0800</pubDate>
+    <lastBuildDate>Tue, 02 Feb 2021 23:31:42 -0800</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
     
       <item>
-        <title>Skate</title>
-        <description>&lt;script&gt;
-         var _page_conf = {
-             // image width and height
-             image: {
-                
-                
-                
-                
-                
-                
-                width: 1949,
-                height: 1194
-                
-                
-                
-                
-             },
+        <title>Dane Reynolds Layback</title>
+        <description>&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function() {
+    $('#myimg').on('click', function(){
+      $('.hideit').toggle();
+    });
+  });
+&lt;/script&gt;
 
-             // pointers and their targets
-             targets: [
-                 
-              
-                
-                
-                
-                
-                
+&lt;script&gt;
 
-                 {
-                    x: 451, // these are
-                    y: 351, // target values
-                    elem: &quot;.pointer1&quot; //this is pointer element id for this target
-                 },
+var images = [];
+function preload() {
+    for (var i = 0; i &lt; arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
 
+//-- usage --//
+preload(
+    &quot;/images/dane-layback/1.jpg&quot;,
+    &quot;/images/dane-layback/2.jpg&quot;,
+    &quot;/images/dane-layback/3.jpg&quot;,
+    &quot;/images/dane-layback/4.jpg&quot;,
+    &quot;/images/dane-layback/5.jpg&quot;,
+    &quot;/images/dane-layback/6.jpg&quot;,
+    &quot;/images/dane-layback/7.jpg&quot;,
+    &quot;/images/dane-layback/8.jpg&quot;,
+    &quot;/images/dane-layback/9.jpg&quot;,
+    &quot;/images/dane-layback/10.jpg&quot;,
+    &quot;/images/dane-layback/12.jpg&quot;,
+    &quot;/images/dane-layback/13.jpg&quot;,
+    &quot;/images/dane-layback/14.jpg&quot;,
+    &quot;/images/dane-layback/15.jpg&quot;,
+    &quot;/images/dane-layback/16.jpg&quot;,
+    &quot;/images/dane-layback/17.jpg&quot;
+)
 
-                
-                
-                
-                
+  // define images
+  var images = [
+    &quot;/images/dane-layback/1.jpg&quot;,
+    &quot;/images/dane-layback/2.jpg&quot;,
+    &quot;/images/dane-layback/3.jpg&quot;,
+    &quot;/images/dane-layback/4.jpg&quot;,
+    &quot;/images/dane-layback/5.jpg&quot;,
+    &quot;/images/dane-layback/6.jpg&quot;,
+    &quot;/images/dane-layback/7.jpg&quot;,
+    &quot;/images/dane-layback/8.jpg&quot;,
+    &quot;/images/dane-layback/9.jpg&quot;,
+    &quot;/images/dane-layback/10.jpg&quot;,
+    &quot;/images/dane-layback/12.jpg&quot;,
+    &quot;/images/dane-layback/13.jpg&quot;,
+    &quot;/images/dane-layback/14.jpg&quot;,
+    &quot;/images/dane-layback/15.jpg&quot;,
+    &quot;/images/dane-layback/16.jpg&quot;,
+    &quot;/images/dane-layback/17.jpg&quot;
 
+  ];
 
-             ]
-         };
-     &lt;/script&gt;
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: &quot;curImg&quot;,       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $(&quot;#myimg&quot;).attr(&quot;src&quot;, images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: &quot;#trigger&quot;, duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+&lt;/script&gt;
 
 &lt;/head&gt;
 
-&lt;body onload=&quot;loaded()&quot;&gt;
+&lt;body&gt;
 
-&lt;style&gt;
-  .backdrop {
-    background-image: url('/images/skate/skatebg.jpg');
-  }
+&lt;div style=&quot;height:350vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+  @media (max-width: 1000px) {
+    #myimg {
+      object-position: 25% 50%;
+    }
+  }  
 &lt;/style&gt;
 
-    &lt;!-- header start --&gt;
-
-    &lt;a class=&quot;logowrap&quot; href=&quot;/&quot;&gt;&lt;img class=&quot;logo&quot; src=&quot;/images/logo.png&quot;&gt;&lt;/a&gt;
-    &lt;a class=&quot;js-menu&quot; &gt;&lt;img class=&quot;logo prodbtn&quot; src=&quot;/images/productico.png&quot;&gt;&lt;/a&gt;
-
-    &lt;!-- header end --&gt;
-
-&lt;div id=&quot;wrapper&quot;&gt;
-  &lt;div id=&quot;scroller&quot;&gt;
-
-    &lt;div&gt;
-
-    
-    
-    
-    
-    
-    
-     
-      
-      &lt;a href=&quot;#&quot; class=&quot;tooltiphide pointer tooltip pointer1&quot; data-content=&quot;#tooltip_content1&quot; title=&quot;This is my image's tooltip message!&quot;&gt;&lt;/a&gt;
-      
-      &lt;!-- &lt;button type=&quot;button&quot; href=&quot;#&quot; class=&quot;modalhide pointer pointer1&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;&lt;/button&gt; --&gt;
-
-      &lt;span id=&quot;tooltip_content1&quot;&gt;
-        &lt;a href=&quot;http://amzn.to/2cOJhvJ&quot; target=&quot;_blank&quot;&gt;
-          &lt;h5&gt;Catch Surf&lt;/h5&gt;
-          &lt;!-- &lt;button class=&quot;button&quot; target=&quot;_blank&quot;&gt;See Details&lt;/button&gt; --&gt;
-          &lt;div&gt;
-            &lt;img src=&quot;/images/skate/skateprod1.jpg&quot; alt=&quot;catch surf&quot; /&gt;
-          &lt;/div&gt;
-        &lt;/a&gt;
-      &lt;/span&gt;
-
-    
-    
-    
-    
-
-    &lt;/div&gt;
-
-    &lt;div class=&quot;backdrop flex&quot;&gt;
-
-    &lt;/div&gt;
-
-  &lt;/div&gt;
+&lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
+  &lt;img id=&quot;myimg&quot; class=&quot;hover_effect&quot; src=&quot;/images/dane-layback/1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;sidemenu&quot;&gt;
-  &lt;ul&gt;
-
-    
-    
-    
-    
-    
-    
-    &lt;li&gt;
-      &lt;a class=&quot;flex&quot; href=&quot;http://amzn.to/2cOJhvJ&quot; target=&quot;_blank&quot; &gt;
-      &lt;div class=&quot;squaredup half-flex-child&quot;&gt;
-        &lt;img src=&quot;/images/skate/skateprod1.jpg&quot;&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;prodnames&quot;&gt;
-        &lt;h6&gt;Catch Surf&lt;/h6&gt;
-        &lt;p&gt;$240&lt;/p&gt;
-        &lt;div class=&quot;button&quot;&gt;Buy&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-    &lt;/li&gt;
-    
-    
-    
-    
-
-  &lt;/ul&gt;
+&lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
+  &lt;p class=&quot;bottommenu_text&quot;&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/sealtooth&quot;&gt;@sealtooth&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://chapter11.tv&quot;&gt;CH11&lt;/a&gt;
+  &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;a class=&quot;js-menu2&quot;&gt;
-  &lt;img class=&quot;logo infobtn&quot; src=&quot;/images/infoico.png&quot;&gt;
-&lt;/a&gt;
-
-&lt;div class=&quot;bottommenu flex align-center&quot;&gt;
-  &lt;p&gt;Get all the rad skate gear for you or the shredder in your life.&lt;br&gt;Vans, DK, DGC, Bones, Independent &amp; Nike&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;!-- Modal --&gt;
-&lt;div class=&quot;modal&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
-          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
-        &lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        ...
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-</description>
-        <pubDate>Sat, 10 Sep 2016 00:00:00 -0700</pubDate>
-        <link>/skate/</link>
-        <guid isPermaLink="true">/skate/</guid>
+&lt;div class=&quot;photog_wrap hideit&quot;&gt;
+  &lt;p class=&quot;photog_text&quot;&gt;
+    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 01 Feb 2021 04:00:00 -0800</pubDate>
+        <link>https://clllips.comhttps://clllips.com/dane-reynolds-layback/</link>
+        <guid isPermaLink="true">https://clllips.comhttps://clllips.com/dane-reynolds-layback/</guid>
         
         
         <category>Sports</category>
@@ -184,173 +137,132 @@
       </item>
     
       <item>
-        <title>Climb</title>
-        <description>&lt;script&gt;
-         var _page_conf = {
-             // image width and height
-             image: {
-                
-                
-                
-                
-                
-                
-                
-                
-                width: 1600,
-                height: 1200
-                
-                
-             },
+        <title>Mickey Clark Slob</title>
+        <description>&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function() {
+    $('#myimg').on('click', function(){
+      $('.hideit').toggle();
+    });
+  });
+&lt;/script&gt;
 
-             // pointers and their targets
-             targets: [
-                 
-              
-                
-                
-                
-                
-                
-                
-                
+&lt;script&gt;
 
-                 {
-                    x: 451, // these are
-                    y: 451, // target values
-                    elem: &quot;.pointer2&quot; //this is pointer element id for this target
-                 },
+var images = [];
+function preload() {
+    for (var i = 0; i &lt; arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
 
+//-- usage --//
+preload(
+  &quot;/images/slob/Frame1.jpg&quot;,
+  &quot;/images/slob/Frame2.jpg&quot;,
+  &quot;/images/slob/Frame3.jpg&quot;,
+  &quot;/images/slob/Frame4.jpg&quot;,
+  &quot;/images/slob/Frame5.jpg&quot;,
+  &quot;/images/slob/Frame6.jpg&quot;,
+  &quot;/images/slob/Frame7.jpg&quot;,
+  &quot;/images/slob/Frame8.jpg&quot;,
+  &quot;/images/slob/Frame9.jpg&quot;,
+  &quot;/images/slob/Frame10.jpg&quot;,
+  &quot;/images/slob/Frame11.jpg&quot;,
+  &quot;/images/slob/Frame12.jpg&quot;,
+  &quot;/images/slob/Frame13.jpg&quot;,
+  &quot;/images/slob/Frame14.jpg&quot;,
+  &quot;/images/slob/Frame15.jpg&quot;,
+  &quot;/images/slob/Frame16.jpg&quot;,
+  &quot;/images/slob/Frame17.jpg&quot;,
+  &quot;/images/slob/Frame19.jpg&quot;,
+  &quot;/images/slob/Frame20.jpg&quot;,
+  &quot;/images/slob/Frame21.jpg&quot;,
+  &quot;/images/slob/Frame22.jpg&quot;,
+  &quot;/images/slob/Frame23.jpg&quot;,
+  &quot;/images/slob/Frame24.jpg&quot;
+)
 
-                
-                
+  // define images
+  var images = [
+    &quot;/images/slob/Frame1.jpg&quot;,
+    &quot;/images/slob/Frame2.jpg&quot;,
+    &quot;/images/slob/Frame3.jpg&quot;,
+    &quot;/images/slob/Frame4.jpg&quot;,
+    &quot;/images/slob/Frame5.jpg&quot;,
+    &quot;/images/slob/Frame6.jpg&quot;,
+    &quot;/images/slob/Frame7.jpg&quot;,
+    &quot;/images/slob/Frame8.jpg&quot;,
+    &quot;/images/slob/Frame9.jpg&quot;,
+    &quot;/images/slob/Frame10.jpg&quot;,
+    &quot;/images/slob/Frame11.jpg&quot;,
+    &quot;/images/slob/Frame12.jpg&quot;,
+    &quot;/images/slob/Frame13.jpg&quot;,
+    &quot;/images/slob/Frame14.jpg&quot;,
+    &quot;/images/slob/Frame15.jpg&quot;,
+    &quot;/images/slob/Frame16.jpg&quot;,
+    &quot;/images/slob/Frame17.jpg&quot;,
+    &quot;/images/slob/Frame19.jpg&quot;,
+    &quot;/images/slob/Frame20.jpg&quot;,
+    &quot;/images/slob/Frame21.jpg&quot;,
+    &quot;/images/slob/Frame22.jpg&quot;,
+    &quot;/images/slob/Frame23.jpg&quot;,
+    &quot;/images/slob/Frame24.jpg&quot;,
 
+  ];
 
-             ]
-         };
-     &lt;/script&gt;
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: &quot;curImg&quot;,       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $(&quot;#myimg&quot;).attr(&quot;src&quot;, images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: &quot;#trigger&quot;, duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+&lt;/script&gt;
 
 &lt;/head&gt;
 
-&lt;body onload=&quot;loaded()&quot;&gt;
+&lt;body&gt;
 
-&lt;style&gt;
-  .backdrop {
-    background-image: url('/images/climb/climbbg.jpg');
-  }
-&lt;/style&gt;
+&lt;div style=&quot;height:360vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
 
-    &lt;!-- header start --&gt;
-
-    &lt;a class=&quot;logowrap&quot; href=&quot;/&quot;&gt;&lt;img class=&quot;logo&quot; src=&quot;/images/logo.png&quot;&gt;&lt;/a&gt;
-    &lt;a class=&quot;js-menu&quot; &gt;&lt;img class=&quot;logo prodbtn&quot; src=&quot;/images/productico.png&quot;&gt;&lt;/a&gt;
-
-    &lt;!-- header end --&gt;
-
-&lt;div id=&quot;wrapper&quot;&gt;
-  &lt;div id=&quot;scroller&quot;&gt;
-
-    &lt;div&gt;
-
-    
-    
-    
-    
-    
-    
-    
-    
-     
-      
-      &lt;a href=&quot;#&quot; class=&quot;tooltiphide pointer tooltip pointer2&quot; data-content=&quot;#tooltip_content2&quot; title=&quot;This is my image's tooltip message!&quot;&gt;&lt;/a&gt;
-      
-      &lt;!-- &lt;button type=&quot;button&quot; href=&quot;#&quot; class=&quot;modalhide pointer pointer2&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;&lt;/button&gt; --&gt;
-
-      &lt;span id=&quot;tooltip_content2&quot;&gt;
-        &lt;a href=&quot;http://amzn.to/2cOJhvJ&quot; target=&quot;_blank&quot;&gt;
-          &lt;h5&gt;Catch Surf2&lt;/h5&gt;
-          &lt;!-- &lt;button class=&quot;button&quot; target=&quot;_blank&quot;&gt;See Details&lt;/button&gt; --&gt;
-          &lt;div&gt;
-            &lt;img src=&quot;/images/climb/climbprod1.jpg&quot; alt=&quot;catch surf&quot; /&gt;
-          &lt;/div&gt;
-        &lt;/a&gt;
-      &lt;/span&gt;
-
-    
-    
-
-    &lt;/div&gt;
-
-    &lt;div class=&quot;backdrop flex&quot;&gt;
-
-    &lt;/div&gt;
-
-  &lt;/div&gt;
+&lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
+  &lt;img id=&quot;myimg&quot; src=&quot;/images/slob/Frame1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;sidemenu&quot;&gt;
-  &lt;ul&gt;
-
-    
-    
-    
-    
-    
-    
-    
-    
-    &lt;li&gt;
-      &lt;a class=&quot;flex&quot; href=&quot;http://amzn.to/2cOJhvJ&quot; target=&quot;_blank&quot; &gt;
-      &lt;div class=&quot;squaredup half-flex-child&quot;&gt;
-        &lt;img src=&quot;/images/climb/climbprod1.jpg&quot;&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;prodnames&quot;&gt;
-        &lt;h6&gt;Catch Surf2&lt;/h6&gt;
-        &lt;p&gt;$102&lt;/p&gt;
-        &lt;div class=&quot;button&quot;&gt;Buy&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-    &lt;/li&gt;
-    
-    
-
-  &lt;/ul&gt;
+&lt;div class=&quot;bottommenu_wrap&quot;&gt;
+  &lt;p class=&quot;bottommenu_text&quot;&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_mitchard&quot;&gt;@_MITCHARD&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://chapter11.tv&quot;&gt;CH11&lt;/a&gt;
+  &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;a class=&quot;js-menu2&quot;&gt;
-  &lt;img class=&quot;logo infobtn&quot; src=&quot;/images/infoico.png&quot;&gt;
-&lt;/a&gt;
-
-&lt;div class=&quot;bottommenu flex align-center&quot;&gt;
-  &lt;p&gt;Hot climbing gear, ready for the rock.&lt;br&gt;Ethics&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;!-- Modal --&gt;
-&lt;div class=&quot;modal&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
-          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
-        &lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        ...
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-</description>
-        <pubDate>Sat, 20 Aug 2016 00:00:00 -0700</pubDate>
-        <link>/climb/</link>
-        <guid isPermaLink="true">/climb/</guid>
+&lt;div class=&quot;photog_wrap&quot;&gt;
+  &lt;p class=&quot;photog_text&quot;&gt;
+    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Tue, 26 Jan 2021 04:00:00 -0800</pubDate>
+        <link>https://clllips.comhttps://clllips.com/mickey-clark-slob/</link>
+        <guid isPermaLink="true">https://clllips.comhttps://clllips.com/mickey-clark-slob/</guid>
         
         
         <category>Sports</category>
@@ -358,212 +270,122 @@
       </item>
     
       <item>
-        <title>Surf</title>
-        <description>&lt;script&gt;
-         var _page_conf = {
-             // image width and height
-             image: {
-                
-                
-                width: 1382,
-                height: 922
-                
-                
-                
-                
-                
-                
-                
-                
-             },
+        <title>Ayton Anti Judo Air</title>
+        <description>&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function() {
+    $('#myimg').on('click', function(){
+      $('.hideit').toggle();
+    });
+  });
+&lt;/script&gt;
 
-             // pointers and their targets
-             targets: [
-                 
-              
-                
+&lt;script&gt;
 
-                 {
-                    x: 600, // these are
-                    y: 400, // target values
-                    elem: &quot;.pointer1&quot; //this is pointer element id for this target
-                 },
+var images = [];
+function preload() {
+    for (var i = 0; i &lt; arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
 
+//-- usage --//
+preload(
+    &quot;/images/ayton-air1/1.jpg&quot;,
+    &quot;/images/ayton-air1/2.jpg&quot;,
+    &quot;/images/ayton-air1/3.jpg&quot;,
+    &quot;/images/ayton-air1/4.jpg&quot;,
+    &quot;/images/ayton-air1/5.jpg&quot;,
+    &quot;/images/ayton-air1/6.jpg&quot;,
+    &quot;/images/ayton-air1/7.jpg&quot;,
+    &quot;/images/ayton-air1/8.jpg&quot;,
+    &quot;/images/ayton-air1/9.jpg&quot;,
+    &quot;/images/ayton-air1/10.jpg&quot;,
+    &quot;/images/ayton-air1/12.jpg&quot;,
+    &quot;/images/ayton-air1/13.jpg&quot;,
+    &quot;/images/ayton-air1/14.jpg&quot;,
+    &quot;/images/ayton-air1/15.jpg&quot;,
+    &quot;/images/ayton-air1/16.jpg&quot;,
+    &quot;/images/ayton-air1/17.jpg&quot;,
+    &quot;/images/ayton-air1/18.jpg&quot;,
+    &quot;/images/ayton-air1/19.jpg&quot;
+)
 
-                
-                
-                
+  // define images
+  var images = [
+    &quot;/images/ayton-air1/1.jpg&quot;,
+    &quot;/images/ayton-air1/2.jpg&quot;,
+    &quot;/images/ayton-air1/3.jpg&quot;,
+    &quot;/images/ayton-air1/4.jpg&quot;,
+    &quot;/images/ayton-air1/5.jpg&quot;,
+    &quot;/images/ayton-air1/6.jpg&quot;,
+    &quot;/images/ayton-air1/7.jpg&quot;,
+    &quot;/images/ayton-air1/8.jpg&quot;,
+    &quot;/images/ayton-air1/9.jpg&quot;,
+    &quot;/images/ayton-air1/10.jpg&quot;,
+    &quot;/images/ayton-air1/12.jpg&quot;,
+    &quot;/images/ayton-air1/13.jpg&quot;,
+    &quot;/images/ayton-air1/14.jpg&quot;,
+    &quot;/images/ayton-air1/15.jpg&quot;,
+    &quot;/images/ayton-air1/16.jpg&quot;,
+    &quot;/images/ayton-air1/17.jpg&quot;,
+    &quot;/images/ayton-air1/18.jpg&quot;,
+    &quot;/images/ayton-air1/19.jpg&quot;
 
-                 {
-                    x: 450, // these are
-                    y: 350, // target values
-                    elem: &quot;.pointer2&quot; //this is pointer element id for this target
-                 },
+  ];
 
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
 
-                
-                
-                
-                
-                
-                
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: &quot;curImg&quot;,       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $(&quot;#myimg&quot;).attr(&quot;src&quot;, images[obj.curImg]); // set the image source
+      }
+    }
+  );
 
+  // init controller
+  var controller = new ScrollMagic.Controller();
 
-             ]
-         };
-     &lt;/script&gt;
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: &quot;#trigger&quot;, duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+&lt;/script&gt;
 
 &lt;/head&gt;
 
-&lt;body onload=&quot;loaded()&quot;&gt;
+&lt;body&gt;
 
-&lt;style&gt;
-  .backdrop {
-    background-image: url('/images/surf/surfbg.jpg');
-  }
-&lt;/style&gt;
+&lt;div style=&quot;height:350vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
 
-    &lt;!-- header start --&gt;
-
-    &lt;a class=&quot;logowrap&quot; href=&quot;/&quot;&gt;&lt;img class=&quot;logo&quot; src=&quot;/images/logo.png&quot;&gt;&lt;/a&gt;
-    &lt;a class=&quot;js-menu&quot; &gt;&lt;img class=&quot;logo prodbtn&quot; src=&quot;/images/productico.png&quot;&gt;&lt;/a&gt;
-
-    &lt;!-- header end --&gt;
-
-&lt;div id=&quot;wrapper&quot;&gt;
-  &lt;div id=&quot;scroller&quot;&gt;
-
-    &lt;div&gt;
-
-    
-    
-     
-      
-      &lt;a href=&quot;#&quot; class=&quot;tooltiphide pointer tooltip pointer1&quot; data-content=&quot;#tooltip_content1&quot; title=&quot;This is my image's tooltip message!&quot;&gt;&lt;/a&gt;
-      
-      &lt;!-- &lt;button type=&quot;button&quot; href=&quot;#&quot; class=&quot;modalhide pointer pointer1&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;&lt;/button&gt; --&gt;
-
-      &lt;span id=&quot;tooltip_content1&quot;&gt;
-        &lt;a href=&quot;http://amzn.to/2c8mxIe&quot; target=&quot;_blank&quot;&gt;
-          &lt;h5&gt;Catch Surf Beater&lt;/h5&gt;
-          &lt;!-- &lt;button class=&quot;button&quot; target=&quot;_blank&quot;&gt;See Details&lt;/button&gt; --&gt;
-          &lt;div&gt;
-            &lt;img src=&quot;/images/surf/surfprod1.jpg&quot; alt=&quot;catch surf beater&quot; /&gt;
-          &lt;/div&gt;
-        &lt;/a&gt;
-      &lt;/span&gt;
-
-    
-    
-    
-     
-      
-      &lt;a href=&quot;#&quot; class=&quot;tooltiphide pointer tooltip pointer2&quot; data-content=&quot;#tooltip_content2&quot; title=&quot;This is my image's tooltip message!&quot;&gt;&lt;/a&gt;
-      
-      &lt;!-- &lt;button type=&quot;button&quot; href=&quot;#&quot; class=&quot;modalhide pointer pointer2&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;&lt;/button&gt; --&gt;
-
-      &lt;span id=&quot;tooltip_content2&quot;&gt;
-        &lt;a href=&quot;http://amzn.to/2cOJhvJ&quot; target=&quot;_blank&quot;&gt;
-          &lt;h5&gt;Catch Surf Whomper&lt;/h5&gt;
-          &lt;!-- &lt;button class=&quot;button&quot; target=&quot;_blank&quot;&gt;See Details&lt;/button&gt; --&gt;
-          &lt;div&gt;
-            &lt;img src=&quot;/images/surf/surfprod2.jpg&quot; alt=&quot;catch surf whomper&quot; /&gt;
-          &lt;/div&gt;
-        &lt;/a&gt;
-      &lt;/span&gt;
-
-    
-    
-    
-    
-    
-    
-
-    &lt;/div&gt;
-
-    &lt;div class=&quot;backdrop flex&quot;&gt;
-
-    &lt;/div&gt;
-
-  &lt;/div&gt;
+&lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
+  &lt;img id=&quot;myimg&quot; src=&quot;/images/ayton-air1/1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;sidemenu&quot;&gt;
-  &lt;ul&gt;
-
-    
-    
-    &lt;li&gt;
-      &lt;a class=&quot;flex&quot; href=&quot;http://amzn.to/2c8mxIe&quot; target=&quot;_blank&quot; &gt;
-      &lt;div class=&quot;squaredup half-flex-child&quot;&gt;
-        &lt;img src=&quot;/images/surf/surfprod1.jpg&quot;&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;prodnames&quot;&gt;
-        &lt;h6&gt;Catch Surf Beater&lt;/h6&gt;
-        &lt;p&gt;$240&lt;/p&gt;
-        &lt;div class=&quot;button&quot;&gt;Buy&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-    &lt;/li&gt;
-    
-    
-    
-    &lt;li&gt;
-      &lt;a class=&quot;flex&quot; href=&quot;http://amzn.to/2cOJhvJ&quot; target=&quot;_blank&quot; &gt;
-      &lt;div class=&quot;squaredup half-flex-child&quot;&gt;
-        &lt;img src=&quot;/images/surf/surfprod2.jpg&quot;&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;prodnames&quot;&gt;
-        &lt;h6&gt;Catch Surf Whomper&lt;/h6&gt;
-        &lt;p&gt;$35&lt;/p&gt;
-        &lt;div class=&quot;button&quot;&gt;Buy&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-    &lt;/li&gt;
-    
-    
-    
-    
-    
-    
-
-  &lt;/ul&gt;
+&lt;div class=&quot;bottommenu_wrap&quot;&gt;
+  &lt;p class=&quot;bottommenu_text&quot;&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/eithanosborne&quot;&gt;@eithanosborne&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://chapter11.tv&quot;&gt;CH11&lt;/a&gt;
+  &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;a class=&quot;js-menu2&quot;&gt;
-  &lt;img class=&quot;logo infobtn&quot; src=&quot;/images/infoico.png&quot;&gt;
-&lt;/a&gt;
-
-&lt;div class=&quot;bottommenu align-center&quot;&gt;
-  &lt;p&gt;Most chill surf gear&lt;br&gt;Get it at Swell.com &gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;!-- Modal --&gt;
-&lt;div class=&quot;modal&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
-  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
-    &lt;div class=&quot;modal-content&quot;&gt;
-      &lt;div class=&quot;modal-header&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
-          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
-        &lt;/button&gt;
-        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-body&quot;&gt;
-        ...
-      &lt;/div&gt;
-      &lt;div class=&quot;modal-footer&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-</description>
-        <pubDate>Mon, 20 Jun 2016 00:00:00 -0700</pubDate>
-        <link>/surf/</link>
-        <guid isPermaLink="true">/surf/</guid>
+&lt;div class=&quot;photog_wrap&quot;&gt;
+  &lt;p class=&quot;photog_text&quot;&gt;
+    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Sun, 10 Jan 2021 04:00:00 -0800</pubDate>
+        <link>https://clllips.comhttps://clllips.com/eithan-osborne-anti-judo-air/</link>
+        <guid isPermaLink="true">https://clllips.comhttps://clllips.com/eithan-osborne-anti-judo-air/</guid>
         
         
         <category>Sports</category>
