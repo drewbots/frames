@@ -1,5 +1,14 @@
+
+.arrowwrap {
+  opacity: 1;
+  -webkit-transition: opacity 1.7s ease-in-out;
+  -moz-transition: opacity 1.7s ease-in-out;
+  -ms-transition: opacity 1.7s ease-in-out;
+  -o-transition: opacity 1.7s ease-in-out;
+}
+
 .hidearrow {
-  display: none;
+  opacity: 0;
 }
 
 .arrows {

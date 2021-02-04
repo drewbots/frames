@@ -58,13 +58,14 @@ ion-icon {
   position: fixed;
   right: auto;
   left: 75px;
-  margin: 7px 9px 0px 8px;
   font-size: 22px;
   display: none;
 }
 
 .insta a, .insta a:visited {
   color: black;
+  position: inherit;
+  padding: 7px 9px;
 }
 
 .insta a:hover {
