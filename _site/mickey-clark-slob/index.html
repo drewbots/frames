@@ -21,6 +21,7 @@
     <link rel="icon" href="/images/favicon.ico">
     <link href="/css/header.css" rel="stylesheet">
     <link href="/css/nav.css" rel="stylesheet">
+    <link href="/css/arrowdown.css" rel="stylesheet">
     <link href="/css/simpleflex.css" rel="stylesheet">
     <link href="/css/normalize.css" rel="stylesheet">
     
@@ -155,7 +156,7 @@ preload(
 </div>
 
 <!-- 	
-	<a href="/dane-reynolds-layback/" title="next Post:">
+	<a href="/eithan-osborne-anti-judo-air/" title="next Post:">
 	    <h4 class="navbtn flex align-center justify-center hideit"><ion-icon name="chevron-forward-outline"></ion-icon></h4>
 	</a>
 	 -->
@@ -171,8 +172,17 @@ preload(
 </div>
 
 
-    <a class="prev" href="/eithan-osborne-anti-judo-air/" title=""><h4 class="navbtn flex align-center justify-center hideit"><ion-icon name="chevron-forward-outline"></ion-icon></h4></a>
+  <a class="prev" href="/"><h4 class="navbtn flex align-center justify-center hideit"><ion-icon name="chevron-forward-outline"></ion-icon></h4></a>
 
+
+
+<div id="arrowwrap">
+<svg class="arrows">
+  <path class="a1" d="M0 0 L30 32 L60 0"></path>
+  <path class="a2" d="M0 20 L30 52 L60 20"></path>
+  <path class="a3" d="M0 40 L30 72 L60 40"></path>
+</svg>
+</div>
 
 <script type="text/javascript">
     $(window).on("load", function() {
@@ -183,7 +193,15 @@ preload(
     $(".insta").show();
     });
 </script>
-
+<script>
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+       $('#arrowwrap').addClass('hidearrow');
+    } else {
+       $('#arrowwrap').removeClass('hidearrow');
+    }
+});
+</script>
 <div id="loaderContainer">
   <div class="loader"></div>
 </div>
@@ -194,7 +212,6 @@ preload(
     </a>
 </div>
 
-    
     
 	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   </body>

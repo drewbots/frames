@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:2106/</link>
     <atom:link href="http://localhost:2106/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Feb 2021 19:43:10 -0800</pubDate>
-    <lastBuildDate>Wed, 03 Feb 2021 19:43:10 -0800</lastBuildDate>
+    <pubDate>Wed, 03 Feb 2021 21:06:49 -0800</pubDate>
+    <lastBuildDate>Wed, 03 Feb 2021 21:06:49 -0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -124,12 +124,135 @@ preload(
 
 &lt;div class=&quot;photog_wrap hideit&quot;&gt;
   &lt;p class=&quot;photog_text&quot;&gt;
-    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
+    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/miniblanchard&quot;&gt;@miniblanchard&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;</description>
         <pubDate>Sun, 31 Jan 2021 08:10:00 -0800</pubDate>
         <link>http://localhost:2106/dane-reynolds-layback/</link>
         <guid isPermaLink="true">http://localhost:2106/dane-reynolds-layback/</guid>
+        
+        
+        <category>Sports</category>
+        
+      </item>
+    
+      <item>
+        <title>Ayton Anti Judo Air</title>
+        <description>&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function() {
+    $('#myimg').on('click', function(){
+      $('.hideit').toggle();
+    });
+  });
+&lt;/script&gt;
+
+&lt;script&gt;
+
+var images = [];
+function preload() {
+    for (var i = 0; i &lt; arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    &quot;/images/ayton-air1/1.jpg&quot;,
+    &quot;/images/ayton-air1/2.jpg&quot;,
+    &quot;/images/ayton-air1/3.jpg&quot;,
+    &quot;/images/ayton-air1/4.jpg&quot;,
+    &quot;/images/ayton-air1/5.jpg&quot;,
+    &quot;/images/ayton-air1/6.jpg&quot;,
+    &quot;/images/ayton-air1/7.jpg&quot;,
+    &quot;/images/ayton-air1/8.jpg&quot;,
+    &quot;/images/ayton-air1/9.jpg&quot;,
+    &quot;/images/ayton-air1/10.jpg&quot;,
+    &quot;/images/ayton-air1/12.jpg&quot;,
+    &quot;/images/ayton-air1/13.jpg&quot;,
+    &quot;/images/ayton-air1/14.jpg&quot;,
+    &quot;/images/ayton-air1/15.jpg&quot;,
+    &quot;/images/ayton-air1/16.jpg&quot;,
+    &quot;/images/ayton-air1/17.jpg&quot;,
+    &quot;/images/ayton-air1/18.jpg&quot;,
+    &quot;/images/ayton-air1/19.jpg&quot;
+)
+
+  // define images
+  var images = [
+    &quot;/images/ayton-air1/1.jpg&quot;,
+    &quot;/images/ayton-air1/2.jpg&quot;,
+    &quot;/images/ayton-air1/3.jpg&quot;,
+    &quot;/images/ayton-air1/4.jpg&quot;,
+    &quot;/images/ayton-air1/5.jpg&quot;,
+    &quot;/images/ayton-air1/6.jpg&quot;,
+    &quot;/images/ayton-air1/7.jpg&quot;,
+    &quot;/images/ayton-air1/8.jpg&quot;,
+    &quot;/images/ayton-air1/9.jpg&quot;,
+    &quot;/images/ayton-air1/10.jpg&quot;,
+    &quot;/images/ayton-air1/12.jpg&quot;,
+    &quot;/images/ayton-air1/13.jpg&quot;,
+    &quot;/images/ayton-air1/14.jpg&quot;,
+    &quot;/images/ayton-air1/15.jpg&quot;,
+    &quot;/images/ayton-air1/16.jpg&quot;,
+    &quot;/images/ayton-air1/17.jpg&quot;,
+    &quot;/images/ayton-air1/18.jpg&quot;,
+    &quot;/images/ayton-air1/19.jpg&quot;
+
+  ];
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: &quot;curImg&quot;,       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $(&quot;#myimg&quot;).attr(&quot;src&quot;, images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: &quot;#trigger&quot;, duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div style=&quot;height:350vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
+  &lt;img id=&quot;myimg&quot; src=&quot;/images/ayton-air1/1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
+  &lt;p class=&quot;bottommenu_text&quot;&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/eithanosborne&quot;&gt;@eithanosborne&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://chapter11.tv&quot;&gt;CH11&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;photog_wrap hideit&quot;&gt;
+  &lt;p class=&quot;photog_text&quot;&gt;
+    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Wed, 27 Jan 2021 08:10:00 -0800</pubDate>
+        <link>http://localhost:2106/eithan-osborne-anti-judo-air/</link>
+        <guid isPermaLink="true">http://localhost:2106/eithan-osborne-anti-judo-air/</guid>
         
         
         <category>Sports</category>
@@ -263,129 +386,6 @@ preload(
         <pubDate>Mon, 25 Jan 2021 08:10:00 -0800</pubDate>
         <link>http://localhost:2106/mickey-clark-slob/</link>
         <guid isPermaLink="true">http://localhost:2106/mickey-clark-slob/</guid>
-        
-        
-        <category>Sports</category>
-        
-      </item>
-    
-      <item>
-        <title>Ayton Anti Judo Air</title>
-        <description>&lt;script type=&quot;text/javascript&quot;&gt;
-  $(document).ready(function() {
-    $('#myimg').on('click', function(){
-      $('.hideit').toggle();
-    });
-  });
-&lt;/script&gt;
-
-&lt;script&gt;
-
-var images = [];
-function preload() {
-    for (var i = 0; i &lt; arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    }
-}
-
-//-- usage --//
-preload(
-    &quot;/images/ayton-air1/1.jpg&quot;,
-    &quot;/images/ayton-air1/2.jpg&quot;,
-    &quot;/images/ayton-air1/3.jpg&quot;,
-    &quot;/images/ayton-air1/4.jpg&quot;,
-    &quot;/images/ayton-air1/5.jpg&quot;,
-    &quot;/images/ayton-air1/6.jpg&quot;,
-    &quot;/images/ayton-air1/7.jpg&quot;,
-    &quot;/images/ayton-air1/8.jpg&quot;,
-    &quot;/images/ayton-air1/9.jpg&quot;,
-    &quot;/images/ayton-air1/10.jpg&quot;,
-    &quot;/images/ayton-air1/12.jpg&quot;,
-    &quot;/images/ayton-air1/13.jpg&quot;,
-    &quot;/images/ayton-air1/14.jpg&quot;,
-    &quot;/images/ayton-air1/15.jpg&quot;,
-    &quot;/images/ayton-air1/16.jpg&quot;,
-    &quot;/images/ayton-air1/17.jpg&quot;,
-    &quot;/images/ayton-air1/18.jpg&quot;,
-    &quot;/images/ayton-air1/19.jpg&quot;
-)
-
-  // define images
-  var images = [
-    &quot;/images/ayton-air1/1.jpg&quot;,
-    &quot;/images/ayton-air1/2.jpg&quot;,
-    &quot;/images/ayton-air1/3.jpg&quot;,
-    &quot;/images/ayton-air1/4.jpg&quot;,
-    &quot;/images/ayton-air1/5.jpg&quot;,
-    &quot;/images/ayton-air1/6.jpg&quot;,
-    &quot;/images/ayton-air1/7.jpg&quot;,
-    &quot;/images/ayton-air1/8.jpg&quot;,
-    &quot;/images/ayton-air1/9.jpg&quot;,
-    &quot;/images/ayton-air1/10.jpg&quot;,
-    &quot;/images/ayton-air1/12.jpg&quot;,
-    &quot;/images/ayton-air1/13.jpg&quot;,
-    &quot;/images/ayton-air1/14.jpg&quot;,
-    &quot;/images/ayton-air1/15.jpg&quot;,
-    &quot;/images/ayton-air1/16.jpg&quot;,
-    &quot;/images/ayton-air1/17.jpg&quot;,
-    &quot;/images/ayton-air1/18.jpg&quot;,
-    &quot;/images/ayton-air1/19.jpg&quot;
-
-  ];
-
-  // TweenMax can tween any property of any object. We use this object to cycle through the array
-  var obj = {curImg: 0};
-
-  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
-  var tween = TweenMax.to(obj, 0.5,
-    {
-      curImg: images.length - 1,  // animate propery curImg to number of images
-      roundProps: &quot;curImg&quot;,       // only integers so it can be used as an array index
-      repeat: 0,                  // repeat 3 times
-      immediateRender: true,      // load first image automatically
-      ease: Linear.easeNone,      // show every image the same ammount of time
-      onUpdate: function () {
-        $(&quot;#myimg&quot;).attr(&quot;src&quot;, images[obj.curImg]); // set the image source
-      }
-    }
-  );
-
-  // init controller
-  var controller = new ScrollMagic.Controller();
-
-  // build scene
-  var scene = new ScrollMagic.Scene({triggerElement: &quot;#trigger&quot;, duration: 1400})
-          .setTween(tween)
-          .removeIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-
-&lt;/script&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-&lt;div style=&quot;height:350vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
-
-&lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
-  &lt;img id=&quot;myimg&quot; src=&quot;/images/ayton-air1/1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
-  &lt;p class=&quot;bottommenu_text&quot;&gt;
-    &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/eithanosborne&quot;&gt;@eithanosborne&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://chapter11.tv&quot;&gt;CH11&lt;/a&gt;
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;photog_wrap hideit&quot;&gt;
-  &lt;p class=&quot;photog_text&quot;&gt;
-    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
-  &lt;/p&gt;
-&lt;/div&gt;</description>
-        <pubDate>Sat, 09 Jan 2021 08:10:00 -0800</pubDate>
-        <link>http://localhost:2106/eithan-osborne-anti-judo-air/</link>
-        <guid isPermaLink="true">http://localhost:2106/eithan-osborne-anti-judo-air/</guid>
         
         
         <category>Sports</category>
