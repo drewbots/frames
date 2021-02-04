@@ -24,6 +24,10 @@ ion-icon {
   pointer-events: none;
 }
 
+#imagessequence {
+  position: fixed;
+}
+
 #myimg {
   width: 100%;
   height: 100vh;
