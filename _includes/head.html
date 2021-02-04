@@ -36,45 +36,16 @@
       });
     </script>
 
-<!--     <script>
-    // Keep track of window width
-    let myWindowWidth = window.innerWidth;
-
-    window.addEventListener( 'resize', function(event) {
-
-        // If width is the same, assume hiding address bar
-        if( myWindowWidth == window.innerWidth ) {
-             return;
-        }
-
-        // Update the window width
-        myWindowWidth = window.innerWidth;
-
-        // Do your thing
-        // ...
-    });
-    </script> -->
 
     <script type="text/javascript">
         var bg = $("#bg1, #bg2");
 
-function resizeBackground() {
-    bg.height($(window).height());
-}
+        function resizeBackground() {
+            bg.height($(window).height());
+        }
 
-$(window).resize(resizeBackground);
-resizeBackground();
+        $(window).resize(resizeBackground);
+        resizeBackground();
 
     </script>
 
-<!-- LOADER/INSTA JS -->
-
-<script type="text/javascript">
-    $(window).on("load", function() {
-      $('#loaderContainer').hide();
-      });
-
-      $(window).load(function(){
-      $(".insta_wrap").show();
-    });
-</script>

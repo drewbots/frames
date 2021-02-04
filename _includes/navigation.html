@@ -21,7 +21,6 @@
   </a>
 </div>
 
-
 <!-- NAV BUTTON -->
 
 <div class="navbtn_wrap">
@@ -32,6 +31,18 @@
 {% endif %}
 </div>
 
+<!-- LOADER/INSTA JS -->
+
+<script type="text/javascript">
+    $(window).on("load", function() {
+      $('#loaderContainer').hide();
+      });
+
+      $(window).load(function(){
+      $(".instawrap").show();
+    });
+</script>
+
 <!-- LOADER BUTTON -->
 
 <div id="loaderContainer">
@@ -41,7 +52,7 @@
 
 <!-- INSTA BUTTON -->
 
-<div class="insta_wrap hideit">
+<div class="instawrap hideit">
     <a target="_blank" href="https://instagram.com/clllips">
         <h4 class="insta_btn flex align-center justify-center"><ion-icon name="logo-instagram"></ion-icon></h4>
     </a>
@@ -57,7 +68,7 @@
   </svg>
 </div>
 
-<script>
+<!-- <script>
   $(window).scroll(function(){
     if ($(this).scrollTop() > 50) {
        $(".arrowwrap").addClass('hidearrow');
@@ -65,5 +76,5 @@
        $(".arrowwrap").removeClass('hidearrow');
     }
   });
-</script>
+</script> -->
 

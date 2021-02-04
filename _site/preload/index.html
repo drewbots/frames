@@ -9,7 +9,7 @@
     <title></title>
     <meta name="description" content="" />
 
-    <link rel="canonical" href="http://localhost:2106/preload/">
+    <link rel="canonical" href="https://clllips.com/preload/">
 
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
@@ -39,58 +39,22 @@
       });
     </script>
 
-<!--     <script>
-    // Keep track of window width
-    let myWindowWidth = window.innerWidth;
-
-    window.addEventListener( 'resize', function(event) {
-
-        // If width is the same, assume hiding address bar
-        if( myWindowWidth == window.innerWidth ) {
-             return;
-        }
-
-        // Update the window width
-        myWindowWidth = window.innerWidth;
-
-        // Do your thing
-        // ...
-    });
-    </script> -->
 
     <script type="text/javascript">
         var bg = $("#bg1, #bg2");
 
-function resizeBackground() {
-    bg.height($(window).height());
-}
+        function resizeBackground() {
+            bg.height($(window).height());
+        }
 
-$(window).resize(resizeBackground);
-resizeBackground();
+        $(window).resize(resizeBackground);
+        resizeBackground();
 
     </script>
 
-<!-- LOADER/INSTA JS -->
 
-<script type="text/javascript">
-    $(window).on("load", function() {
-      $('#loaderContainer').hide();
-      });
-
-      $(window).load(function(){
-      $(".insta_wrap").show();
-    });
-</script>
 
     
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('#myimg').on('click', function(){
-      $('.hideit').toggle();
-    });
-  });
-</script>
-
 <script>
 
 var images = [];
@@ -224,7 +188,6 @@ preload(
   </a>
 </div>
 
-
 <!-- NAV BUTTON -->
 
 <div class="navbtn_wrap">
@@ -232,6 +195,18 @@ preload(
   <a class="prev" href="/"><h4 class="navbtn flex align-center justify-center hideit"><ion-icon name="chevron-forward-outline"></ion-icon></h4></a>
 
 </div>
+
+<!-- LOADER/INSTA JS -->
+
+<script type="text/javascript">
+    $(window).on("load", function() {
+      $('#loaderContainer').hide();
+      });
+
+      $(window).load(function(){
+      $(".instawrap").show();
+    });
+</script>
 
 <!-- LOADER BUTTON -->
 
@@ -242,7 +217,7 @@ preload(
 
 <!-- INSTA BUTTON -->
 
-<div class="insta_wrap hideit">
+<div class="instawrap hideit">
     <a target="_blank" href="https://instagram.com/clllips">
         <h4 class="insta_btn flex align-center justify-center"><ion-icon name="logo-instagram"></ion-icon></h4>
     </a>
@@ -258,7 +233,7 @@ preload(
   </svg>
 </div>
 
-<script>
+<!-- <script>
   $(window).scroll(function(){
     if ($(this).scrollTop() > 50) {
        $(".arrowwrap").addClass('hidearrow');
@@ -266,7 +241,7 @@ preload(
        $(".arrowwrap").removeClass('hidearrow');
     }
   });
-</script>
+</script> -->
 
 
     
