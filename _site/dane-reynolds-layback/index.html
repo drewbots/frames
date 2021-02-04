@@ -39,6 +39,18 @@
       });
     </script>
 
+    <script type="text/javascript">
+        var bg = $("#imagesequence");
+
+        function resizeBackground() {
+            bg.height($(window).height());
+        }
+
+        $(window).resize(resizeBackground);
+        resizeBackground();
+
+    </script>
+    
 <style>
 
 #imagesequence {
