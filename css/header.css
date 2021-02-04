@@ -32,6 +32,9 @@ ion-icon {
   color: purple;
 }
 
+
+/*LOGO BUTTON*/
+
 .logo {
   padding: 1px 8px 1px 8px;
   background-color: black;
@@ -58,6 +61,7 @@ ion-icon {
   color: purple;
 }
 
+
 /*INSTAGRAM BUTTON*/
 
 .insta_wrap {
@@ -83,6 +87,7 @@ ion-icon {
   color: purple;
 }
 
+
 /*RIDER BUTTON*/
 
 .bottommenu_wrap {
@@ -103,7 +108,20 @@ ion-icon {
   font-size: 17px;
 }
 
-/*CREDIT BUTTON*/
+@media (max-width: 1000px) {
+
+  .bottommenu_wrap {
+    flex-direction: column;
+  }
+
+  .bottommenu_text, .photog_text {
+    font-size: 15px;
+  }
+
+}
+
+
+/*CR BUTTON*/
 
 .photog_wrap {
   position: fixed;
@@ -123,6 +141,7 @@ ion-icon {
   font-weight: 700;
   font-size: 17px;
 }
+
 
 /*NAV ARROW BUTTON*/
 
@@ -154,17 +173,8 @@ ion-icon {
   color: purple;
 }
 
-@media (max-width: 1000px) {
 
-  .bottommenu_wrap {
-    flex-direction: column;
-  }
-
-  .bottommenu_text, .photog_text {
-    font-size: 15px;
-  }
-
-}
+/*LOADEERRRRRRR*/
 
 #loaderContainer {
   position: fixed;
