@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:2106/</link>
     <atom:link href="http://localhost:2106/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Feb 2021 22:42:22 -0800</pubDate>
-    <lastBuildDate>Wed, 03 Feb 2021 22:42:22 -0800</lastBuildDate>
+    <pubDate>Wed, 03 Feb 2021 23:01:36 -0800</pubDate>
+    <lastBuildDate>Wed, 03 Feb 2021 23:01:36 -0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -113,7 +113,7 @@ preload(
 &lt;/style&gt;
 
 &lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
-  &lt;img id=&quot;myimg&quot; class=&quot;hover_effect&quot; src=&quot;/images/dane-layback/1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
+  &lt;img id=&quot;myimg&quot; class=&quot;hover_effect&quot; src=&quot;/images/dane-layback/1.jpg&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
@@ -138,15 +138,7 @@ preload(
     
       <item>
         <title>Ayton Anti Judo Air</title>
-        <description>&lt;script type=&quot;text/javascript&quot;&gt;
-  $(document).ready(function() {
-    $('#myimg').on('click', function(){
-      $('.hideit').toggle();
-    });
-  });
-&lt;/script&gt;
-
-&lt;script&gt;
+        <description>&lt;script&gt;
 
 var images = [];
 function preload() {
@@ -236,7 +228,7 @@ preload(
 &lt;div style=&quot;height:350vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
 
 &lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
-  &lt;img id=&quot;myimg&quot; src=&quot;/images/ayton-air1/1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
+  &lt;img id=&quot;myimg&quot; src=&quot;/images/ayton-air1/1.jpg&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
@@ -369,7 +361,7 @@ preload(
 &lt;div style=&quot;height:360vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
 
 &lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
-  &lt;img id=&quot;myimg&quot; src=&quot;/images/slob/Frame1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
+  &lt;img id=&quot;myimg&quot; src=&quot;/images/slob/Frame1.jpg&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
