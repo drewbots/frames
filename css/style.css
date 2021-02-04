@@ -24,6 +24,10 @@ ion-icon {
   pointer-events: none;
 }
 
+body {
+  transition: height 999999s
+}
+
 #imagesequence {
   position: fixed;
   transition: height 999999s;
@@ -31,7 +35,7 @@ ion-icon {
 
 #imagesequence img {
   position: fixed;
-  transition: height 999999s
+  transition: height 999999s;
 }
 
 #myimg {
