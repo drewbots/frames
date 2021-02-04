@@ -39,18 +39,23 @@
       });
     </script>
 
+<style>
+#imagesequence {
+  transition: height 999999s;
+}
 
-    <script type="text/javascript">
-        var bg = $("#imagesequence, #myimg");
+#myimg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
 
-        function resizeBackground() {
-            bg.height($(window).height());
-        }
+</style>
 
-        $(window).resize(resizeBackground);
-        resizeBackground();
-
-    </script>
 
 
 
@@ -163,24 +168,6 @@ preload(
   </p>
 </div>
     
-<style>
-#imagesequence {
-  transition: height 999999s;
-}
-
-#myimg {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-}
-
-</style>
-
-
 <!-- LOGO -->
 
 <div class="logo hideit">
