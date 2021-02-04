@@ -16,6 +16,10 @@
   background: black;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  a:hover { color: none; }
+}
+
 ion-icon {
   pointer-events: none;
 }
@@ -54,23 +58,32 @@ ion-icon {
   color: purple;
 }
 
-.insta {
+/*INSTAGRAM BUTTON*/
+
+.insta_wrap {
   position: fixed;
   right: auto;
   left: 75px;
-  font-size: 22px;
-  display: none;
 }
 
-.insta a, .insta a:visited {
+.insta_btn {
+  font-size: 22px;
+  display: none;
   color: black;
   position: inherit;
   padding: 7px 9px;
+  margin: 0;
 }
 
-.insta a:hover {
+.insta_btn ion-icon {
+  color: black;
+}
+
+.insta_btn:hover > ion-icon {
   color: purple;
 }
+
+/*RIDER BUTTON*/
 
 .bottommenu_wrap {
   position: fixed;
@@ -89,6 +102,8 @@ ion-icon {
   font-weight: 700;
   font-size: 17px;
 }
+
+/*CREDIT BUTTON*/
 
 .photog_wrap {
   position: fixed;
@@ -109,8 +124,13 @@ ion-icon {
   font-size: 17px;
 }
 
-.cameraicon {
-  display: inline-block;
+/*NAV ARROW BUTTON*/
+
+.navbtn_wrap {
+  margin: 5px 7px 0 0;
+  position: fixed;
+  right: 0;
+  z-index: 2;
 }
 
 .navbtn {
@@ -119,19 +139,19 @@ ion-icon {
   background-color: black;
   line-height: 24px;
   font-family: 'Abhaya Libre', serif;
-  font-weight: 700;
-  font-size: 17px;
-  margin: 5px 7px 0 0;
-  color: white;
-  background-color: black;
-  line-height: 24px;
   height: 35px;
-  right: 0;
-  z-index: 2;
   font-family: 'Abhaya Libre', serif;
   font-weight: 700;
-  position: fixed;
   font-size: 19px;
+  margin:0;
+}
+
+.navbtn ion-icon {
+  color: white;
+}
+
+.navbtn:hover > ion-icon {
+  color: purple;
 }
 
 @media (max-width: 1000px) {
@@ -144,14 +164,6 @@ ion-icon {
     font-size: 15px;
   }
 
-}
-
-.navbtn ion-icon {
-  color: white
-}
-
-.navbtn:hover > ion-icon {
-  color: purple;
 }
 
 #loaderContainer {
