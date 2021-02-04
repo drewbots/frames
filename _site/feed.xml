@@ -3,10 +3,10 @@
   <channel>
     <title>Frames</title>
     <description></description>
-    <link>https://clllips.com/</link>
-    <atom:link href="https://clllips.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 04 Feb 2021 01:01:50 -0800</pubDate>
-    <lastBuildDate>Thu, 04 Feb 2021 01:01:50 -0800</lastBuildDate>
+    <link>http://localhost:2106/</link>
+    <atom:link href="http://localhost:2106/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 04 Feb 2021 01:04:13 -0800</pubDate>
+    <lastBuildDate>Thu, 04 Feb 2021 01:04:13 -0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -120,8 +120,8 @@ preload(
   &lt;/p&gt;
 &lt;/div&gt;</description>
         <pubDate>Sun, 31 Jan 2021 08:10:00 -0800</pubDate>
-        <link>https://clllips.com/dane-reynolds-layback/</link>
-        <guid isPermaLink="true">https://clllips.com/dane-reynolds-layback/</guid>
+        <link>http://localhost:2106/dane-reynolds-layback/</link>
+        <guid isPermaLink="true">http://localhost:2106/dane-reynolds-layback/</guid>
         
         
         <category>Sports</category>
@@ -235,8 +235,8 @@ preload(
   &lt;/p&gt;
 &lt;/div&gt;</description>
         <pubDate>Wed, 27 Jan 2021 08:10:00 -0800</pubDate>
-        <link>https://clllips.com/eithan-osborne-anti-judo-air/</link>
-        <guid isPermaLink="true">https://clllips.com/eithan-osborne-anti-judo-air/</guid>
+        <link>http://localhost:2106/eithan-osborne-anti-judo-air/</link>
+        <guid isPermaLink="true">http://localhost:2106/eithan-osborne-anti-judo-air/</guid>
         
         
         <category>Sports</category>
@@ -360,8 +360,8 @@ preload(
   &lt;/p&gt;
 &lt;/div&gt;</description>
         <pubDate>Mon, 25 Jan 2021 08:10:00 -0800</pubDate>
-        <link>https://clllips.com/mickey-clark-slob/</link>
-        <guid isPermaLink="true">https://clllips.com/mickey-clark-slob/</guid>
+        <link>http://localhost:2106/mickey-clark-slob/</link>
+        <guid isPermaLink="true">http://localhost:2106/mickey-clark-slob/</guid>
         
         
         <category>Sports</category>
