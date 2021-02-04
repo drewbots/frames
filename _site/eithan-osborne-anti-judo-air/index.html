@@ -161,26 +161,19 @@ preload(
     
 <style>
 #imagesequence {
-  position: fixed;
+  transition: height 999999s;
 }
 
 #myimg {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  transition: height 999999s;
+  transition: object-fit 999999s;
+  position: fixed;
 }
 
 body {
-  transition: height 999999s;
-}
-
-#imagesequence {
-  position: fixed;
-  transition: height 999999s;
-}
-
-#imagesequence img {
-  position: fixed;
   transition: height 999999s;
 }
 
