@@ -32,6 +32,17 @@
 {% endif %}
 </div>
 
+<!-- LOADER/INSTA JS -->
+
+<script type="text/javascript">
+    $(window).on("load", function() {
+      $('#loaderContainer').hide();
+      });
+
+      $(window).load(function(){
+      $(".insta_btn").show();
+    });
+</script>
 
 <!-- LOADER BUTTON -->
 
@@ -47,16 +58,6 @@
         <h4 class="insta_btn flex align-center justify-center hideit"><ion-icon name="logo-instagram"></ion-icon></h4>
     </a>
 </div>
-
-<script type="text/javascript">
-    $(window).on("load", function() {
-      $('#loaderContainer').hide();
-      });
-
-      $(window).load(function(){
-      $(".insta_btn").show();
-    });
-</script>
 
 <!-- ARROW ANIMATION -->
 
