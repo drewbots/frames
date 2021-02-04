@@ -9,7 +9,7 @@
     <title></title>
     <meta name="description" content="" />
 
-    <link rel="canonical" href="http://localhost:2106/preload/">
+    <link rel="canonical" href="https://clllips.com/preload/">
 
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
@@ -37,6 +37,37 @@
           $('.hideit').toggle();
         });
       });
+    </script>
+
+<!--     <script>
+    // Keep track of window width
+    let myWindowWidth = window.innerWidth;
+
+    window.addEventListener( 'resize', function(event) {
+
+        // If width is the same, assume hiding address bar
+        if( myWindowWidth == window.innerWidth ) {
+             return;
+        }
+
+        // Update the window width
+        myWindowWidth = window.innerWidth;
+
+        // Do your thing
+        // ...
+    });
+    </script> -->
+
+    <script type="text/javascript">
+        var bg = $("#bg1, #bg2");
+
+function resizeBackground() {
+    bg.height($(window).height());
+}
+
+$(window).resize(resizeBackground);
+resizeBackground();
+
     </script>
 
     
@@ -193,37 +224,28 @@ preload(
 
 <!-- LOADER BUTTON -->
 
-<script type="text/javascript">
-    $(window).on("load", function() {
-      $('#loaderContainer').hide();
-      });
-
-      $(window).load(function(){
-      $(".insta").show();
-    });
-</script>
-
 <div id="loaderContainer">
   <div class="loader"></div>
 </div>
 
 
 <!-- INSTA BUTTON -->
-<script type="text/javascript">
-    $(window).on("load", function() {
-      $('#loaderContainer').hide();
-      });
-
-      $(window).load(function(){
-      $(".insta").show();
-    });
-</script>
 
 <div class="insta_wrap">
     <a target="_blank" href="https://instagram.com/clllips">
         <h4 class="insta_btn flex align-center justify-center hideit"><ion-icon name="logo-instagram"></ion-icon></h4>
     </a>
 </div>
+
+<script type="text/javascript">
+    $(window).on("load", function() {
+      $('#loaderContainer').hide();
+      });
+
+      $(window).load(function(){
+      $(".insta_btn").show();
+    });
+</script>
 
 <!-- ARROW ANIMATION -->
 
@@ -244,6 +266,8 @@ preload(
     }
   });
 </script>
+
+
     
 	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 

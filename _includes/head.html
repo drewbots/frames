@@ -36,7 +36,7 @@
       });
     </script>
 
-    <script>
+<!--     <script>
     // Keep track of window width
     let myWindowWidth = window.innerWidth;
 
@@ -53,4 +53,16 @@
         // Do your thing
         // ...
     });
+    </script> -->
+
+    <script type="text/javascript">
+        var bg = $("#bg1, #bg2");
+
+function resizeBackground() {
+    bg.height($(window).height());
+}
+
+$(window).resize(resizeBackground);
+resizeBackground();
+
     </script>
