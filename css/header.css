@@ -16,6 +16,10 @@
   background: black;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  a:hover { color: none; }
+}
+
 ion-icon {
   pointer-events: none;
 }
