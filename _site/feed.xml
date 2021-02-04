@@ -3,10 +3,10 @@
   <channel>
     <title>Frames</title>
     <description></description>
-    <link>https://clllips.comhttps://clllips.com/</link>
-    <atom:link href="https://clllips.comhttps://clllips.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Feb 2021 23:31:42 -0800</pubDate>
-    <lastBuildDate>Tue, 02 Feb 2021 23:31:42 -0800</lastBuildDate>
+    <link>http://localhost:2106/</link>
+    <atom:link href="http://localhost:2106/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 03 Feb 2021 19:43:10 -0800</pubDate>
+    <lastBuildDate>Wed, 03 Feb 2021 19:43:10 -0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -51,6 +51,7 @@ preload(
 
   // define images
   var images = [
+
     &quot;/images/dane-layback/1.jpg&quot;,
     &quot;/images/dane-layback/2.jpg&quot;,
     &quot;/images/dane-layback/3.jpg&quot;,
@@ -67,7 +68,6 @@ preload(
     &quot;/images/dane-layback/15.jpg&quot;,
     &quot;/images/dane-layback/16.jpg&quot;,
     &quot;/images/dane-layback/17.jpg&quot;
-
   ];
 
   // TweenMax can tween any property of any object. We use this object to cycle through the array
@@ -127,9 +127,9 @@ preload(
     cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;</description>
-        <pubDate>Mon, 01 Feb 2021 04:00:00 -0800</pubDate>
-        <link>https://clllips.comhttps://clllips.com/dane-reynolds-layback/</link>
-        <guid isPermaLink="true">https://clllips.comhttps://clllips.com/dane-reynolds-layback/</guid>
+        <pubDate>Sun, 31 Jan 2021 08:10:00 -0800</pubDate>
+        <link>http://localhost:2106/dane-reynolds-layback/</link>
+        <guid isPermaLink="true">http://localhost:2106/dane-reynolds-layback/</guid>
         
         
         <category>Sports</category>
@@ -249,20 +249,20 @@ preload(
   &lt;img id=&quot;myimg&quot; src=&quot;/images/slob/Frame1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;bottommenu_wrap&quot;&gt;
+&lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
   &lt;p class=&quot;bottommenu_text&quot;&gt;
     &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_mitchard&quot;&gt;@_MITCHARD&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://chapter11.tv&quot;&gt;CH11&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;photog_wrap&quot;&gt;
+&lt;div class=&quot;photog_wrap hideit&quot;&gt;
   &lt;p class=&quot;photog_text&quot;&gt;
     cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;</description>
-        <pubDate>Tue, 26 Jan 2021 04:00:00 -0800</pubDate>
-        <link>https://clllips.comhttps://clllips.com/mickey-clark-slob/</link>
-        <guid isPermaLink="true">https://clllips.comhttps://clllips.com/mickey-clark-slob/</guid>
+        <pubDate>Mon, 25 Jan 2021 08:10:00 -0800</pubDate>
+        <link>http://localhost:2106/mickey-clark-slob/</link>
+        <guid isPermaLink="true">http://localhost:2106/mickey-clark-slob/</guid>
         
         
         <category>Sports</category>
@@ -372,20 +372,20 @@ preload(
   &lt;img id=&quot;myimg&quot; src=&quot;/images/ayton-air1/1.jpg&quot; style=&quot;display: block; position:fixed; width: 100%; height: 100vh; object-fit: cover;&quot;&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;bottommenu_wrap&quot;&gt;
+&lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
   &lt;p class=&quot;bottommenu_text&quot;&gt;
     &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/eithanosborne&quot;&gt;@eithanosborne&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://chapter11.tv&quot;&gt;CH11&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;photog_wrap&quot;&gt;
+&lt;div class=&quot;photog_wrap hideit&quot;&gt;
   &lt;p class=&quot;photog_text&quot;&gt;
     cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;</description>
-        <pubDate>Sun, 10 Jan 2021 04:00:00 -0800</pubDate>
-        <link>https://clllips.comhttps://clllips.com/eithan-osborne-anti-judo-air/</link>
-        <guid isPermaLink="true">https://clllips.comhttps://clllips.com/eithan-osborne-anti-judo-air/</guid>
+        <pubDate>Sat, 09 Jan 2021 08:10:00 -0800</pubDate>
+        <link>http://localhost:2106/eithan-osborne-anti-judo-air/</link>
+        <guid isPermaLink="true">http://localhost:2106/eithan-osborne-anti-judo-air/</guid>
         
         
         <category>Sports</category>

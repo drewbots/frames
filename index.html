@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: null
 title:
 description:
 keywords:
 ---
 
-{% for post in site.posts limit:1 %}
-{{ post.content }}
-{% endfor %}
+{{ site.posts.first }}
