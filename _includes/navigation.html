@@ -8,16 +8,10 @@
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  transition: height 999999s;
-  transition: object-fit 999999s;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-}
-
-body {
-  overflow: hidden;
 }
 
 </style>
@@ -88,3 +82,14 @@ body {
   });
 </script>
 
+    <script type="text/javascript">
+        var bg = $("#imagesequence, #myimg");
+
+        function resizeBackground() {
+            bg.height($(window).height());
+        }
+
+        $(window).resize(resizeBackground);
+        resizeBackground();
+
+    </script>
