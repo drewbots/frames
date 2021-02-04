@@ -75,11 +75,11 @@ ion-icon {
   position: fixed;
   right: auto;
   left: 75px;
+  display: none;
 }
 
 .insta_btn {
   font-size: 22px;
-  display: none;
   color: black;
   position: inherit;
   padding: 7px 9px;
