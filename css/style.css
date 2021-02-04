@@ -59,6 +59,7 @@ ion-icon {
   position: fixed;
   right: auto;
   left: 75px;
+  top: 0;
   display: none;
 }
 
@@ -180,6 +181,7 @@ ion-icon {
   position: fixed;
   right: auto;
   left: 75px;
+  top: 0;
   margin: 2px 9px 0px 8px;
 }
 
