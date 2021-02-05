@@ -51,14 +51,17 @@
 <style>
 
 html {
-    height  : 100%;
-    overflow: hidden;
-    position: relative;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
 }
+
 body {
-    height  : 100%;
-    overflow: auto;
-    position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 #imagesequence {
