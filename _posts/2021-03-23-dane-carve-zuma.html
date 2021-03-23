@@ -1,0 +1,114 @@
+---
+id: 3
+date: 2021-02-01
+title: Dane Reynolds Layback
+author: drew
+layout: default
+permalink: /dane-reynolds-layback/
+categories:
+  - Sports
+---
+
+<script>
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+	"/images/dane-carve-zuma/0.jpg"
+    "/images/dane-carve-zuma/1.jpg",
+    "/images/dane-carve-zuma/2.jpg",
+    "/images/dane-carve-zuma/3.jpg",
+    "/images/dane-carve-zuma/4.jpg",
+    "/images/dane-carve-zuma/5.jpg",
+    "/images/dane-carve-zuma/6.jpg",
+    "/images/dane-carve-zuma/7.jpg",
+    "/images/dane-carve-zuma/8.jpg",
+    "/images/dane-carve-zuma/9.jpg",
+    "/images/dane-carve-zuma/10.jpg",
+    "/images/dane-carve-zuma/12.jpg",
+    "/images/dane-carve-zuma/13.jpg",
+    "/images/dane-carve-zuma/14.jpg"
+)
+
+  // define images
+  var images = [
+    "/images/dane-carve-zuma/0.jpg"
+    "/images/dane-carve-zuma/1.jpg",
+    "/images/dane-carve-zuma/2.jpg",
+    "/images/dane-carve-zuma/3.jpg",
+    "/images/dane-carve-zuma/4.jpg",
+    "/images/dane-carve-zuma/5.jpg",
+    "/images/dane-carve-zuma/6.jpg",
+    "/images/dane-carve-zuma/7.jpg",
+    "/images/dane-carve-zuma/8.jpg",
+    "/images/dane-carve-zuma/9.jpg",
+    "/images/dane-carve-zuma/10.jpg",
+    "/images/dane-carve-zuma/12.jpg",
+    "/images/dane-carve-zuma/13.jpg",
+    "/images/dane-carve-zuma/14.jpg"
+  ];
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: "curImg",       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $("#myimg").attr("src", images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+</script>
+
+</head>
+
+<body>
+
+<div style="height:350vh; position:absolute; width:20px;"></div>
+
+<style type="text/css">
+  @media (max-width: 1000px) {
+    #myimg {
+      object-position: 25% 50%;
+    }
+  }  
+</style>
+
+<div id="imagesequence" id="trigger">
+  <img id="myimg" src="/images/dane-carve-zuma/0.jpg">
+</div>
+
+<div class="bottommenu_wrap hideit">
+  <p class="bottommenu_text">
+    <a target="_blank" href="https://instagram.com/sealtooth">@sealtooth</a> for <a target="_blank" href="https://chapter11.tv">CH11</a>
+  </p>
+</div>
+
+<div class="photog_wrap hideit">
+  <p class="photog_text">
+    cr <a target="_blank" href="https://instagram.com/_huntermartinez">@_huntermartinez</a>
+  </p>
+</div>
