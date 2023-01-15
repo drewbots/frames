@@ -3,11 +3,363 @@
   <channel>
     <title>Frames</title>
     <description></description>
-    <link>http://localhost:2106/</link>
-    <atom:link href="http://localhost:2106/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 04 Feb 2021 21:40:23 -0800</pubDate>
-    <lastBuildDate>Thu, 04 Feb 2021 21:40:23 -0800</lastBuildDate>
+    <link>https://clllips.com/</link>
+    <atom:link href="https://clllips.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 14 Jan 2023 20:46:59 -0800</pubDate>
+    <lastBuildDate>Sat, 14 Jan 2023 20:46:59 -0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Dane Carve Zuma</title>
+        <description>&lt;script&gt;
+
+var images = [];
+function preload() {
+    for (var i = 0; i &lt; arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+	&quot;/images/dane-carve-zuma/0.jpg&quot;,
+    &quot;/images/dane-carve-zuma/1.jpg&quot;,
+    &quot;/images/dane-carve-zuma/2.jpg&quot;,
+    &quot;/images/dane-carve-zuma/3.jpg&quot;,
+    &quot;/images/dane-carve-zuma/4.jpg&quot;,
+    &quot;/images/dane-carve-zuma/5.jpg&quot;,
+    &quot;/images/dane-carve-zuma/6.jpg&quot;,
+    &quot;/images/dane-carve-zuma/7.jpg&quot;,
+    &quot;/images/dane-carve-zuma/8.jpg&quot;,
+    &quot;/images/dane-carve-zuma/9.jpg&quot;,
+    &quot;/images/dane-carve-zuma/10.jpg&quot;,
+    &quot;/images/dane-carve-zuma/12.jpg&quot;,
+    &quot;/images/dane-carve-zuma/13.jpg&quot;,
+    &quot;/images/dane-carve-zuma/14.jpg&quot;
+)
+
+  // define images
+  var images = [
+    &quot;/images/dane-carve-zuma/0.jpg&quot;,
+    &quot;/images/dane-carve-zuma/1.jpg&quot;,
+    &quot;/images/dane-carve-zuma/2.jpg&quot;,
+    &quot;/images/dane-carve-zuma/3.jpg&quot;,
+    &quot;/images/dane-carve-zuma/4.jpg&quot;,
+    &quot;/images/dane-carve-zuma/5.jpg&quot;,
+    &quot;/images/dane-carve-zuma/6.jpg&quot;,
+    &quot;/images/dane-carve-zuma/7.jpg&quot;,
+    &quot;/images/dane-carve-zuma/8.jpg&quot;,
+    &quot;/images/dane-carve-zuma/9.jpg&quot;,
+    &quot;/images/dane-carve-zuma/10.jpg&quot;,
+    &quot;/images/dane-carve-zuma/12.jpg&quot;,
+    &quot;/images/dane-carve-zuma/13.jpg&quot;,
+    &quot;/images/dane-carve-zuma/14.jpg&quot;
+  ];
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: &quot;curImg&quot;,       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $(&quot;#myimg&quot;).attr(&quot;src&quot;, images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: &quot;#trigger&quot;, duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div style=&quot;height:350vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+  @media (max-width: 1000px) {
+    #myimg {
+      object-position: 25% 50%;
+    }
+  }  
+&lt;/style&gt;
+
+&lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
+  &lt;img id=&quot;myimg&quot; src=&quot;/images/dane-carve-zuma/0.jpg&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
+  &lt;p class=&quot;bottommenu_text&quot;&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/sealtooth&quot;&gt;@sealtooth&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://chapter11.tv&quot;&gt;CH11&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;photog_wrap hideit&quot;&gt;
+  &lt;p class=&quot;photog_text&quot;&gt;
+    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Tue, 23 Mar 2021 00:00:00 -0700</pubDate>
+        <link>https://clllips.com/dane-carve-zuma/</link>
+        <guid isPermaLink="true">https://clllips.com/dane-carve-zuma/</guid>
+        
+        
+        <category>Sports</category>
+        
+      </item>
+    
+      <item>
+        <title>Andrew Doheny Log Chuck</title>
+        <description>&lt;script&gt;
+
+var images = [];
+function preload() {
+    for (var i = 0; i &lt; arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+  &quot;/images/logtoss/1.png&quot;,
+  &quot;/images/logtoss/2.png&quot;,
+  &quot;/images/logtoss/3.png&quot;,
+  &quot;/images/logtoss/4.png&quot;,
+  &quot;/images/logtoss/5.png&quot;,
+  &quot;/images/logtoss/6.png&quot;,
+  &quot;/images/logtoss/7.png&quot;,
+  &quot;/images/logtoss/8.png&quot;,
+  &quot;/images/logtoss/9.png&quot;,
+  &quot;/images/logtoss/10.png&quot;,
+  &quot;/images/logtoss/11.png&quot;,
+  &quot;/images/logtoss/12.png&quot;,
+  &quot;/images/logtoss/13.png&quot;,
+  &quot;/images/logtoss/14.png&quot;,
+  &quot;/images/logtoss/15.png&quot;,
+  &quot;/images/logtoss/16.png&quot;,
+  &quot;/images/logtoss/17.png&quot;,
+  &quot;/images/logtoss/18.png&quot;,
+  &quot;/images/logtoss/19.png&quot;,
+  &quot;/images/logtoss/20.png&quot;
+)
+
+  // define images
+  var images = [
+    &quot;/images/logtoss/1.png&quot;,
+    &quot;/images/logtoss/2.png&quot;,
+    &quot;/images/logtoss/3.png&quot;,
+    &quot;/images/logtoss/4.png&quot;,
+    &quot;/images/logtoss/5.png&quot;,
+    &quot;/images/logtoss/6.png&quot;,
+    &quot;/images/logtoss/7.png&quot;,
+    &quot;/images/logtoss/8.png&quot;,
+    &quot;/images/logtoss/9.png&quot;,
+    &quot;/images/logtoss/10.png&quot;,
+    &quot;/images/logtoss/11.png&quot;,
+    &quot;/images/logtoss/12.png&quot;,
+    &quot;/images/logtoss/13.png&quot;,
+    &quot;/images/logtoss/14.png&quot;,
+    &quot;/images/logtoss/15.png&quot;,
+    &quot;/images/logtoss/16.png&quot;,
+    &quot;/images/logtoss/17.png&quot;,
+    &quot;/images/logtoss/18.png&quot;,
+    &quot;/images/logtoss/19.png&quot;,
+    &quot;/images/logtoss/20.png&quot;
+
+  ];
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: &quot;curImg&quot;,       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $(&quot;#myimg&quot;).attr(&quot;src&quot;, images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: &quot;#trigger&quot;, duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div style=&quot;height:500vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+  @media (max-width: 1000px) {
+    #myimg {
+      object-position: 28% 50%;
+    }
+  }  
+&lt;/style&gt;
+
+&lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
+  &lt;img id=&quot;myimg&quot; src=&quot;/images/logtoss/1.png&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
+  &lt;p class=&quot;bottommenu_text&quot;&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/andrew_doheny&quot;&gt;@andrew_doheny&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://formermerchandise.com&quot;&gt;Former&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;photog_wrap hideit&quot;&gt;
+&lt;!--   &lt;p class=&quot;photog_text&quot;&gt;
+    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/andrew_shoener&quot;&gt;@_andrew_shoener&lt;/a&gt;
+  &lt;/p&gt; --&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 15 Feb 2021 00:00:00 -0800</pubDate>
+        <link>https://clllips.com/andrew-doheny-log-chuck/</link>
+        <guid isPermaLink="true">https://clllips.com/andrew-doheny-log-chuck/</guid>
+        
+        
+        <category>Sports</category>
+        
+      </item>
+    
+      <item>
+        <title>Mickey Clark Backside Slob</title>
+        <description>&lt;script&gt;
+
+var images = [];
+function preload() {
+    for (var i = 0; i &lt; arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+  &quot;/images/bsslob/Frame1.jpg&quot;,
+  &quot;/images/bsslob/Frame2.jpg&quot;,
+  &quot;/images/bsslob/Frame3.jpg&quot;,
+  &quot;/images/bsslob/Frame4.jpg&quot;,
+  &quot;/images/bsslob/Frame5.jpg&quot;,
+  &quot;/images/bsslob/Frame6.jpg&quot;,
+  &quot;/images/bsslob/Frame7.jpg&quot;,
+  &quot;/images/bsslob/Frame8.jpg&quot;,
+  &quot;/images/bsslob/Frame9.jpg&quot;,
+  &quot;/images/bsslob/Frame10.jpg&quot;,
+  &quot;/images/bsslob/Frame11.jpg&quot;,
+  &quot;/images/bsslob/Frame12.jpg&quot;,
+  &quot;/images/bsslob/Frame13.jpg&quot;,
+  &quot;/images/bsslob/Frame14.jpg&quot;,
+  &quot;/images/bsslob/Frame15.jpg&quot;,
+  &quot;/images/bsslob/Frame16.jpg&quot;
+)
+
+  // define images
+  var images = [
+    &quot;/images/bsslob/Frame1.jpg&quot;,
+    &quot;/images/bsslob/Frame2.jpg&quot;,
+    &quot;/images/bsslob/Frame3.jpg&quot;,
+    &quot;/images/bsslob/Frame4.jpg&quot;,
+    &quot;/images/bsslob/Frame5.jpg&quot;,
+    &quot;/images/bsslob/Frame6.jpg&quot;,
+    &quot;/images/bsslob/Frame7.jpg&quot;,
+    &quot;/images/bsslob/Frame8.jpg&quot;,
+    &quot;/images/bsslob/Frame9.jpg&quot;,
+    &quot;/images/bsslob/Frame10.jpg&quot;,
+    &quot;/images/bsslob/Frame11.jpg&quot;,
+    &quot;/images/bsslob/Frame12.jpg&quot;,
+    &quot;/images/bsslob/Frame13.jpg&quot;,
+    &quot;/images/bsslob/Frame14.jpg&quot;,
+    &quot;/images/bsslob/Frame15.jpg&quot;,
+    &quot;/images/bsslob/Frame16.jpg&quot;
+
+  ];
+
+  // TweenMax can tween any property of any object. We use this object to cycle through the array
+  var obj = {curImg: 0};
+
+  // create tweenfile:///C:/Users/Andrew/Desktop/1.png
+  var tween = TweenMax.to(obj, 0.5,
+    {
+      curImg: images.length - 1,  // animate propery curImg to number of images
+      roundProps: &quot;curImg&quot;,       // only integers so it can be used as an array index
+      repeat: 0,                  // repeat 3 times
+      immediateRender: true,      // load first image automatically
+      ease: Linear.easeNone,      // show every image the same ammount of time
+      onUpdate: function () {
+        $(&quot;#myimg&quot;).attr(&quot;src&quot;, images[obj.curImg]); // set the image source
+      }
+    }
+  );
+
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: &quot;#trigger&quot;, duration: 1400})
+          .setTween(tween)
+          .removeIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div style=&quot;height:360vh; position:absolute; width:20px;&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;imagesequence&quot; id=&quot;trigger&quot;&gt;
+  &lt;img id=&quot;myimg&quot; src=&quot;/images/bsslob/Frame1.jpg&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bottommenu_wrap hideit&quot;&gt;
+  &lt;p class=&quot;bottommenu_text&quot;&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_mitchard&quot;&gt;@_MITCHARD&lt;/a&gt; for &lt;a target=&quot;_blank&quot; href=&quot;https://chapter11.tv&quot;&gt;CH11&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;photog_wrap hideit&quot;&gt;
+  &lt;p class=&quot;photog_text&quot;&gt;
+    cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 15 Feb 2021 00:00:00 -0800</pubDate>
+        <link>https://clllips.com/mickey-clark-bsslob/</link>
+        <guid isPermaLink="true">https://clllips.com/mickey-clark-bsslob/</guid>
+        
+        
+        <category>Sports</category>
+        
+      </item>
     
       <item>
         <title>Dane Reynolds Layback</title>
@@ -119,9 +471,9 @@ preload(
     cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/miniblanchard&quot;&gt;@miniblanchard&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;</description>
-        <pubDate>Sun, 31 Jan 2021 08:10:00 -0800</pubDate>
-        <link>http://localhost:2106/dane-reynolds-layback/</link>
-        <guid isPermaLink="true">http://localhost:2106/dane-reynolds-layback/</guid>
+        <pubDate>Mon, 01 Feb 2021 00:00:00 -0800</pubDate>
+        <link>https://clllips.com/dane-reynolds-layback/</link>
+        <guid isPermaLink="true">https://clllips.com/dane-reynolds-layback/</guid>
         
         
         <category>Sports</category>
@@ -234,9 +586,9 @@ preload(
     cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;</description>
-        <pubDate>Wed, 27 Jan 2021 08:10:00 -0800</pubDate>
-        <link>http://localhost:2106/eithan-osborne-anti-judo-air/</link>
-        <guid isPermaLink="true">http://localhost:2106/eithan-osborne-anti-judo-air/</guid>
+        <pubDate>Thu, 28 Jan 2021 00:00:00 -0800</pubDate>
+        <link>https://clllips.com/eithan-osborne-anti-judo-air/</link>
+        <guid isPermaLink="true">https://clllips.com/eithan-osborne-anti-judo-air/</guid>
         
         
         <category>Sports</category>
@@ -359,9 +711,9 @@ preload(
     cr &lt;a target=&quot;_blank&quot; href=&quot;https://instagram.com/_huntermartinez&quot;&gt;@_huntermartinez&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;</description>
-        <pubDate>Mon, 25 Jan 2021 08:10:00 -0800</pubDate>
-        <link>http://localhost:2106/mickey-clark-slob/</link>
-        <guid isPermaLink="true">http://localhost:2106/mickey-clark-slob/</guid>
+        <pubDate>Tue, 26 Jan 2021 00:00:00 -0800</pubDate>
+        <link>https://clllips.com/mickey-clark-slob/</link>
+        <guid isPermaLink="true">https://clllips.com/mickey-clark-slob/</guid>
         
         
         <category>Sports</category>
